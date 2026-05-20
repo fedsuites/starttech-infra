@@ -130,17 +130,15 @@ module "storage" {
   redis_security_group_id = module.networking.redis_security_group_id
 }
 
-# Monitoring Module
-module "monitoring" {
-  source = "./modules/monitoring"
+# Standalone log group - created before compute to break the cycle
+resource "aws_cloudwatch_log_group" "backend" {
+  name              = "/starttech/backend"
+  retention_in_days = var.log_retention_days
 
-  project_name       = var.project_name
-  environment        = var.environment
-  log_retention_days = var.log_retention_days
-  alarm_email        = var.alarm_email
-  asg_name           = module.compute.asg_name
-  alb_arn            = module.compute.alb_arn
-  target_group_arn   = module.compute.target_group_arn
+  tags = {
+    Name        = "${var.project_name}-backend-logs"
+    Environment = var.environment
+  }
 }
 
 # Compute Module
@@ -161,7 +159,18 @@ module "compute" {
   asg_desired_capacity      = var.asg_desired_capacity
   ecr_repository_name       = var.ecr_repository_name
   iam_instance_profile_name = aws_iam_instance_profile.ec2_profile.name
-  log_group_name            = module.monitoring.backend_log_group_name
+  log_group_name            = aws_cloudwatch_log_group.backend.name
+}
 
-  depends_on = [module.monitoring]
+# Monitoring Module
+module "monitoring" {
+  source = "./modules/monitoring"
+
+  project_name       = var.project_name
+  environment        = var.environment
+  log_retention_days = var.log_retention_days
+  alarm_email        = var.alarm_email
+  asg_name           = module.compute.asg_name
+  alb_arn            = module.compute.alb_arn
+  target_group_arn   = module.compute.target_group_arn
 }

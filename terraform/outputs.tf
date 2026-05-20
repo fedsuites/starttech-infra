@@ -36,8 +36,9 @@ output "redis_endpoint" {
 
 output "backend_log_group_name" {
   description = "CloudWatch log group for backend"
-  value       = module.monitoring.backend_log_group_name
+  value       = aws_cloudwatch_log_group.backend.name
 }
+
 
 output "asg_name" {
   description = "Name of the Auto Scaling Group"
