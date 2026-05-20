@@ -1,0 +1,88 @@
+# StarTech CloudWatch Log Insights Queries
+# Use these in AWS Console → CloudWatch → Log Insights
+# Log Group: /starttech/backend
+
+# ─────────────────────────────────────────
+# 1. All ERROR logs in the last hour
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /ERROR/
+| sort @timestamp desc
+| limit 50
+
+# ─────────────────────────────────────────
+# 2. Request count by HTTP status code
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /status/
+| parse @message '"status":*,' as status
+| stats count() by status
+| sort count desc
+
+# ─────────────────────────────────────────
+# 3. Slow requests (response time > 1s)
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /latency/
+| parse @message '"latency":*,' as latency
+| filter latency > 1000
+| sort latency desc
+| limit 20
+
+# ─────────────────────────────────────────
+# 4. Top 10 most called API endpoints
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /path/
+| parse @message '"path":"*"' as path
+| stats count() as requests by path
+| sort requests desc
+| limit 10
+
+# ─────────────────────────────────────────
+# 5. Authentication failures
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /unauthorized/ or @message like /401/
+| sort @timestamp desc
+| limit 50
+
+# ─────────────────────────────────────────
+# 6. Error rate over time (per 5 minutes)
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /ERROR/
+| stats count() as error_count by bin(5m)
+| sort @timestamp desc
+
+# ─────────────────────────────────────────
+# 7. Unique active users in last 24 hours
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /user_id/
+| parse @message '"user_id":"*"' as user_id
+| stats count_distinct(user_id) as unique_users
+
+# ─────────────────────────────────────────
+# 8. Failed Todo operations
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /todo/ and @message like /ERROR/
+| sort @timestamp desc
+| limit 30
+
+# ─────────────────────────────────────────
+# 9. Redis cache hit vs miss ratio
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /cache/
+| parse @message '"cache":"*"' as cache_result
+| stats count() as total by cache_result
+
+# ─────────────────────────────────────────
+# 10. Application startup and shutdown events
+# ─────────────────────────────────────────
+fields @timestamp, @message
+| filter @message like /starting/ or @message like /shutting down/
+| sort @timestamp desc
+| limit 20

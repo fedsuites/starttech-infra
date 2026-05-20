@@ -1,0 +1,140 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "ALB Request Count",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 300,
+        "stat": "Sum",
+        "metrics": [
+          ["AWS/ApplicationELB", "RequestCount", "LoadBalancer", "starttech-alb"]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "ALB Target Response Time",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 300,
+        "stat": "Average",
+        "metrics": [
+          ["AWS/ApplicationELB", "TargetResponseTime", "LoadBalancer", "starttech-alb"]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "EC2 CPU Utilization",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 300,
+        "stat": "Average",
+        "metrics": [
+          ["AWS/EC2", "CPUUtilization", "AutoScalingGroupName", "starttech-backend-asg"]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "ALB HTTP 5XX Errors",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 300,
+        "stat": "Sum",
+        "metrics": [
+          ["AWS/ApplicationELB", "HTTPCode_Target_5XX_Count", "LoadBalancer", "starttech-alb"],
+          ["AWS/ApplicationELB", "HTTPCode_Target_4XX_Count", "LoadBalancer", "starttech-alb"]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 12,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "ASG Instance Count",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 300,
+        "stat": "Average",
+        "metrics": [
+          ["AWS/AutoScaling", "GroupInServiceInstances", "AutoScalingGroupName", "starttech-backend-asg"],
+          ["AWS/AutoScaling", "GroupDesiredCapacity", "AutoScalingGroupName", "starttech-backend-asg"]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 12,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "ElastiCache Redis CPU & Connections",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 300,
+        "stat": "Average",
+        "metrics": [
+          ["AWS/ElastiCache", "CPUUtilization", "CacheClusterId", "starttech-redis"],
+          ["AWS/ElastiCache", "CurrConnections", "CacheClusterId", "starttech-redis"]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 18,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "ALB Healthy vs Unhealthy Hosts",
+        "view": "timeSeries",
+        "stacked": false,
+        "period": 60,
+        "stat": "Average",
+        "metrics": [
+          ["AWS/ApplicationELB", "HealthyHostCount", "LoadBalancer", "starttech-alb"],
+          ["AWS/ApplicationELB", "UnHealthyHostCount", "LoadBalancer", "starttech-alb"]
+        ]
+      }
+    },
+    {
+      "type": "log",
+      "x": 12,
+      "y": 18,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Backend Error Logs",
+        "query": "SOURCE '/starttech/backend' | fields @timestamp, @message | filter @message like /ERROR/ | sort @timestamp desc | limit 20",
+        "region": "us-east-1",
+        "view": "table"
+      }
+    }
+  ]
+}

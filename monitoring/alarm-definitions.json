@@ -1,0 +1,112 @@
+{
+  "alarms": [
+    {
+      "AlarmName": "starttech-alb-5xx-errors",
+      "AlarmDescription": "ALB 5XX error rate exceeded threshold",
+      "MetricName": "HTTPCode_Target_5XX_Count",
+      "Namespace": "AWS/ApplicationELB",
+      "Statistic": "Sum",
+      "Period": 60,
+      "EvaluationPeriods": 2,
+      "Threshold": 10,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching",
+      "Dimensions": [
+        {
+          "Name": "LoadBalancer",
+          "Value": "starttech-alb"
+        }
+      ]
+    },
+    {
+      "AlarmName": "starttech-alb-response-time",
+      "AlarmDescription": "ALB average response time exceeded 2 seconds",
+      "MetricName": "TargetResponseTime",
+      "Namespace": "AWS/ApplicationELB",
+      "Statistic": "Average",
+      "Period": 60,
+      "EvaluationPeriods": 2,
+      "Threshold": 2,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching",
+      "Dimensions": [
+        {
+          "Name": "LoadBalancer",
+          "Value": "starttech-alb"
+        }
+      ]
+    },
+    {
+      "AlarmName": "starttech-unhealthy-hosts",
+      "AlarmDescription": "One or more backend hosts are unhealthy",
+      "MetricName": "UnHealthyHostCount",
+      "Namespace": "AWS/ApplicationELB",
+      "Statistic": "Average",
+      "Period": 60,
+      "EvaluationPeriods": 1,
+      "Threshold": 0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching",
+      "Dimensions": [
+        {
+          "Name": "LoadBalancer",
+          "Value": "starttech-alb"
+        }
+      ]
+    },
+    {
+      "AlarmName": "starttech-cpu-high",
+      "AlarmDescription": "EC2 CPU utilization exceeded 70%",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Period": 120,
+      "EvaluationPeriods": 2,
+      "Threshold": 70,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching",
+      "Dimensions": [
+        {
+          "Name": "AutoScalingGroupName",
+          "Value": "starttech-backend-asg"
+        }
+      ]
+    },
+    {
+      "AlarmName": "starttech-cpu-low",
+      "AlarmDescription": "EC2 CPU utilization below 20% - scale down",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Period": 120,
+      "EvaluationPeriods": 2,
+      "Threshold": 20,
+      "ComparisonOperator": "LessThanThreshold",
+      "TreatMissingData": "notBreaching",
+      "Dimensions": [
+        {
+          "Name": "AutoScalingGroupName",
+          "Value": "starttech-backend-asg"
+        }
+      ]
+    },
+    {
+      "AlarmName": "starttech-redis-cpu-high",
+      "AlarmDescription": "ElastiCache Redis CPU exceeded 70%",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/ElastiCache",
+      "Statistic": "Average",
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 70,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching",
+      "Dimensions": [
+        {
+          "Name": "CacheClusterId",
+          "Value": "starttech-redis"
+        }
+      ]
+    }
+  ]
+}
