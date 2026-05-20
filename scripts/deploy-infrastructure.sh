@@ -6,7 +6,7 @@ set -euo pipefail
 
 ACTION=${1:-plan}
 TERRAFORM_DIR="$(dirname "$0")/../terraform"
-STATE_BUCKET="starttech-terraform-state"
+STATE_BUCKET="starttech-terraform-state-829350946407"
 AWS_REGION=${AWS_REGION:-"us-east-1"}
 
 echo "Starting infrastructure deployment — action: $ACTION"

@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "starttech-terraform-state"
+    bucket = "starttech-terraform-state-829350946407"
     key    = "production/terraform.tfstate"
     region = "us-east-1"
   }
