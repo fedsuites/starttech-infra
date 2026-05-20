@@ -17,15 +17,7 @@ resource "aws_sns_topic_subscription" "email" {
 }
 
 # CloudWatch Log Groups
-resource "aws_cloudwatch_log_group" "backend" {
-  name              = "/starttech/backend"
-  retention_in_days = var.log_retention_days
 
-  tags = {
-    Name        = "${var.project_name}-backend-logs"
-    Environment = var.environment
-  }
-}
 
 resource "aws_cloudwatch_log_group" "frontend" {
   name              = "/starttech/frontend"
@@ -57,6 +49,7 @@ resource "aws_cloudwatch_dashboard" "main" {
         type = "metric"
         properties = {
           title  = "ALB Request Count"
+          region ="us-east-1"
           period = 300
           stat   = "Sum"
           metrics = [
@@ -69,6 +62,7 @@ resource "aws_cloudwatch_dashboard" "main" {
         type = "metric"
         properties = {
           title  = "ALB Target Response Time"
+          region = "us-east-1"
           period = 300
           stat   = "Average"
           metrics = [
@@ -81,6 +75,7 @@ resource "aws_cloudwatch_dashboard" "main" {
         type = "metric"
         properties = {
           title  = "ASG CPU Utilization"
+          region = "us-east-1"
           period = 300
           stat   = "Average"
           metrics = [
@@ -93,6 +88,7 @@ resource "aws_cloudwatch_dashboard" "main" {
         type = "metric"
         properties = {
           title  = "ALB HTTP 5XX Errors"
+          region = "us-east-1"
           period = 300
           stat   = "Sum"
           metrics = [

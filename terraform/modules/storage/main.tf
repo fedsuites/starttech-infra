@@ -77,7 +77,7 @@ resource "aws_cloudfront_origin_access_control" "frontend" {
 }
 
 # CloudFront Distribution
-resource "aws_cloudfront_distribution" "frontend" {
+/*resource "aws_cloudfront_distribution" "frontend" {
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = "index.html"
@@ -137,7 +137,7 @@ resource "aws_cloudfront_distribution" "frontend" {
     Name        = "${var.project_name}-cloudfront"
     Environment = var.environment
   }
-}
+}*/
 
 # ElastiCache Subnet Group
 resource "aws_elasticache_subnet_group" "redis" {

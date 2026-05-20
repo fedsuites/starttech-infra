@@ -133,11 +133,9 @@ jobs:
           echo "| Resource | Value |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           echo "| ALB DNS | $(terraform output -raw alb_dns_name 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
-          echo "| CloudFront Domain | $(terraform output -raw cloudfront_domain_name 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
           echo "| S3 Bucket | $(terraform output -raw s3_bucket_name 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
           echo "| ECR Repository | $(terraform output -raw ecr_repository_url 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
-          echo "| CloudFront ID | $(terraform output -raw cloudfront_distribution_id 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
-
+         
   terraform-destroy:
     name: Terraform Destroy
     runs-on: ubuntu-latest
