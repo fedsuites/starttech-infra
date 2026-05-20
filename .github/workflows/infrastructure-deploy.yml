@@ -54,10 +54,10 @@ jobs:
 
       - name: Create S3 state bucket if not exists
         run: |
-          if ! aws s3 ls "s3://starttech-terraform-state" 2>/dev/null; then
-            aws s3 mb s3://starttech-terraform-state --region ${{ secrets.AWS_REGION }}
+          if ! aws s3 ls "s3://starttech-terraform-state-829350946407" 2>/dev/null; then
+            aws s3 mb s3://starttech-terraform-state-829350946407 --region ${{ secrets.AWS_REGION }}
             aws s3api put-bucket-versioning \
-              --bucket starttech-terraform-state \
+              --bucket starttech-terraform-state-829350946407 \
               --versioning-configuration Status=Enabled
           fi
 
@@ -127,15 +127,16 @@ jobs:
         run: terraform apply tfplan
 
       - name: Output infrastructure values
+        if: success()
         run: |
           echo "## Infrastructure Outputs" >> $GITHUB_STEP_SUMMARY
           echo "| Resource | Value |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
-          echo "| ALB DNS | $(terraform output -raw alb_dns_name) |" >> $GITHUB_STEP_SUMMARY
-          echo "| CloudFront Domain | $(terraform output -raw cloudfront_domain_name) |" >> $GITHUB_STEP_SUMMARY
-          echo "| S3 Bucket | $(terraform output -raw s3_bucket_name) |" >> $GITHUB_STEP_SUMMARY
-          echo "| ECR Repository | $(terraform output -raw ecr_repository_url) |" >> $GITHUB_STEP_SUMMARY
-          echo "| CloudFront ID | $(terraform output -raw cloudfront_distribution_id) |" >> $GITHUB_STEP_SUMMARY
+          echo "| ALB DNS | $(terraform output -raw alb_dns_name 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
+          echo "| CloudFront Domain | $(terraform output -raw cloudfront_domain_name 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
+          echo "| S3 Bucket | $(terraform output -raw s3_bucket_name 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
+          echo "| ECR Repository | $(terraform output -raw ecr_repository_url 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
+          echo "| CloudFront ID | $(terraform output -raw cloudfront_distribution_id 2>/dev/null || echo 'pending') |" >> $GITHUB_STEP_SUMMARY
 
   terraform-destroy:
     name: Terraform Destroy
@@ -168,7 +169,4 @@ jobs:
       - name: Terraform Destroy
         run: |
           terraform destroy \
-            -var="aws_region=${{ secrets.AWS_REGION }}" \
-            -var="s3_bucket_name=${{ secrets.S3_BUCKET_NAME }}" \
-            -var="alarm_email=${{ secrets.ALARM_EMAIL }}" \
             -auto-approve
