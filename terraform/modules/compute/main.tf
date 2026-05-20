@@ -100,66 +100,14 @@ resource "aws_launch_template" "backend" {
     associate_public_ip_address = false
     security_groups             = [var.backend_security_group_id]
   }
-
-  user_data = base64encode(<<-EOF
-    #!/bin/bash
-    set -e
-
-    # Install Docker
-    yum update -y
-    yum install -y docker aws-cli
-    systemctl start docker
-    systemctl enable docker
-
-    # Install CloudWatch agent
-    yum install -y amazon-cloudwatch-agent
-
-    # Configure CloudWatch agent
-    cat > /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json <<'CWCONFIG'
-    {
-      "logs": {
-        "logs_collected": {
-          "files": {
-            "collect_list": [
-              {
-                "file_path": "/var/log/muchtodo/app.log",
-                "log_group_name": "${var.log_group_name}",
-                "log_stream_name": "{instance_id}",
-                "timezone": "UTC"
-              }
-            ]
-          }
-        }
-      }
-    }
-    CWCONFIG
-
-    systemctl start amazon-cloudwatch-agent
-    systemctl enable amazon-cloudwatch-agent
-
-    # Login to ECR and pull latest image
-    AWS_REGION=$(curl -s http://169.254.169.254/latest/meta-data/placement/region)
-    AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-    ECR_REGISTRY="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
-
-    aws ecr get-login-password --region "$AWS_REGION" | \
-      docker login --username AWS --password-stdin "$ECR_REGISTRY"
-
-    docker pull "$ECR_REGISTRY/${var.ecr_repository_name}:latest"
-
-    mkdir -p /var/log/muchtodo
-
-    docker run -d \
-      --name muchtodo \
-      --restart unless-stopped \
-      -p 8080:8080 \
-      --log-driver awslogs \
-      --log-opt awslogs-region="$AWS_REGION" \
-      --log-opt awslogs-group="${var.log_group_name}" \
-      --log-opt awslogs-stream="$(curl -s http://169.254.169.254/latest/meta-data/instance-id)" \
-      "$ECR_REGISTRY/${var.ecr_repository_name}:latest"
-  EOF
-  )
+  user_data = base64encode(templatefile("${path.module}/userdata.sh", {
+    mongo_uri           = var.mongo_uri
+    jwt_secret          = var.jwt_secret
+    redis_addr          = var.redis_addr
+    log_group_name      = var.log_group_name
+    ecr_repository_name = var.ecr_repository_name
+  }))
+  
 
   tag_specifications {
     resource_type = "instance"

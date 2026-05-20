@@ -27,6 +27,9 @@ env:
   TF_VAR_aws_region: ${{ secrets.AWS_REGION }}
   TF_VAR_s3_bucket_name: ${{ secrets.S3_BUCKET_NAME }}
   TF_VAR_alarm_email: ${{ secrets.ALARM_EMAIL }}
+  TF_VAR_mongo_uri: ${{ secrets.MONGO_URI }}
+  TF_VAR_jwt_secret: ${{ secrets.JWT_SECRET_KEY }}
+  TF_VAR_redis_addr: ${{ secrets.REDIS_ADDR }}
 
 jobs:
   terraform-plan:

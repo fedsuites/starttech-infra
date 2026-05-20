@@ -160,6 +160,9 @@ module "compute" {
   ecr_repository_name       = var.ecr_repository_name
   iam_instance_profile_name = aws_iam_instance_profile.ec2_profile.name
   log_group_name            = aws_cloudwatch_log_group.backend.name
+  mongo_uri  = var.mongo_uri
+  jwt_secret = var.jwt_secret
+  redis_addr = var.redis_addr
 }
 
 # Monitoring Module
@@ -173,4 +176,23 @@ module "monitoring" {
   asg_name           = module.compute.asg_name
   alb_arn            = module.compute.alb_arn
   target_group_arn   = module.compute.target_group_arn
+}
+
+# Application secrets
+variable "mongo_uri" {
+  description = "MongoDB connection string"
+  type        = string
+  sensitive   = true
+}
+
+variable "jwt_secret" {
+  description = "JWT secret key"
+  type        = string
+  sensitive   = true
+}
+
+variable "redis_addr" {
+  description = "Redis address host:port"
+  type        = string
+  default     = "starttech-redis.d4y5r7.0001.use1.cache.amazonaws.com:6379"
 }

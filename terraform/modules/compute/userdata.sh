@@ -1,0 +1,77 @@
+#!/bin/bash
+set -e
+
+# Install Docker and AWS CLI
+yum update -y
+yum install -y docker aws-cli amazon-cloudwatch-agent
+systemctl start docker
+systemctl enable docker
+
+# Get instance metadata
+AWS_REGION=$(curl -s http://169.254.169.254/latest/meta-data/placement/region)
+INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+
+# Create env file
+mkdir -p /etc/muchtodo
+cat > /etc/muchtodo/env << 'ENVFILE'
+PORT=8080
+MONGO_URI=${mongo_uri}
+DB_NAME=much_todo_db
+JWT_SECRET_KEY=${jwt_secret}
+JWT_EXPIRATION_HOURS=72
+ENABLE_CACHE=true
+REDIS_ADDR=${redis_addr}
+LOG_LEVEL=INFO
+LOG_FORMAT=json
+ALLOWED_ORIGINS=*
+SECURE_COOKIE=false
+ENVFILE
+
+# Configure CloudWatch agent
+cat > /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json << 'CWCONFIG'
+{
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+          {
+            "file_path": "/var/log/muchtodo/app.log",
+            "log_group_name": "${log_group_name}",
+            "log_stream_name": "{instance_id}",
+            "timezone": "UTC"
+          }
+        ]
+      }
+    }
+  }
+}
+CWCONFIG
+
+systemctl start amazon-cloudwatch-agent
+systemctl enable amazon-cloudwatch-agent
+
+# Login to ECR
+aws ecr get-login-password --region $AWS_REGION | \
+  docker login --username AWS --password-stdin \
+  829350946407.dkr.ecr.$AWS_REGION.amazonaws.com
+
+# Pull and run container
+docker pull 829350946407.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
+
+docker stop muchtodo 2>/dev/null || true
+docker rm muchtodo 2>/dev/null || true
+
+mkdir -p /var/log/muchtodo
+
+docker run -d \
+  --name muchtodo \
+  --restart unless-stopped \
+  -p 8080:8080 \
+  --env-file /etc/muchtodo/env \
+  --log-driver awslogs \
+  --log-opt awslogs-region=$AWS_REGION \
+  --log-opt awslogs-group=${log_group_name} \
+  --log-opt awslogs-stream=$INSTANCE_ID \
+  829350946407.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
+
+echo "Backend container started successfully"
