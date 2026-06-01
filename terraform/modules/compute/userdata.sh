@@ -67,7 +67,17 @@ docker run -d \
   --name muchtodo \
   --restart unless-stopped \
   -p 8080:8080 \
-  --env-file /etc/muchtodo/env \
+  -e PORT=8080 \
+  -e MONGO_URI="${mongo_uri}" \
+  -e DB_NAME=much_todo_db \
+  -e JWT_SECRET_KEY="${jwt_secret}" \
+  -e JWT_EXPIRATION_HOURS=72 \
+  -e ENABLE_CACHE=true \
+  -e REDIS_ADDR="${redis_addr}" \
+  -e LOG_LEVEL=INFO \
+  -e LOG_FORMAT=json \
+  -e ALLOWED_ORIGINS="*" \
+  -e SECURE_COOKIE=false \
   --log-driver awslogs \
   --log-opt awslogs-region=$AWS_REGION \
   --log-opt awslogs-group=${log_group_name} \
