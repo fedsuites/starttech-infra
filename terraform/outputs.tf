@@ -8,7 +8,7 @@ output "alb_dns_name" {
   value       = module.compute.alb_dns_name
 }
 
-/*output "cloudfront_domain_name" {
+output "cloudfront_domain_name" {
   description = "Domain name of the CloudFront distribution"
   value       = module.storage.cloudfront_domain_name
 }
@@ -16,7 +16,7 @@ output "alb_dns_name" {
 output "cloudfront_distribution_id" {
   description = "ID of the CloudFront distribution"
   value       = module.storage.cloudfront_distribution_id
-}*/
+}
 
 output "s3_bucket_name" {
   description = "Name of the frontend S3 bucket"
