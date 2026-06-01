@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+
+# Redirect all output to a log file AND console
+exec > >(tee /var/log/userdata.log | logger -t userdata -s 2>/dev/console) 2>&1
 # Install Docker and AWS CLI
 yum update -y
 yum install -y docker aws-cli amazon-cloudwatch-agent
@@ -58,4 +61,7 @@ docker inspect muchtodo >> /var/log/muchtodo-startup.log 2>&1 || true
 echo "=== CONTAINER STARTUP LOG ==="
 cat /var/log/muchtodo-startup.log
 echo "=== END CONTAINER LOG ==="
+# Upload logs to S3 for debugging
+aws s3 cp /var/log/userdata.log s3://starttech-frontend-445567073243/debug/userdata-$(curl -s http://169.254.169.254/latest/meta-data/instance-id).log || true
+aws s3 cp /var/log/muchtodo-startup.log s3://starttech-frontend-445567073243/debug/container-$(curl -s http://169.254.169.254/latest/meta-data/instance-id).log || true
 echo "Backend container started successfully"

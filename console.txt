@@ -1,0 +1,652 @@
+i-07430d5acf587945e	oud-init[6621]: kernel                         x86_64 5.10.255-253.1008.amzn2 amzn2extra-kernel-5.10
+[   84.946349] cloud-init[6621]: 34 M
+[   84.946872] cloud-init[6621]: python2-colorama               noarch 0.3.9-3.amzn2.0.1       amzn2-core  30 k
+[   84.947103] cloud-init[6621]: replacing  python-colorama.noarch 0.3.2-3.amzn2
+[   84.947322] cloud-init[6621]: python2-six                    noarch 1.11.0-8.amzn2.0.1      amzn2-core  33 k
+[   84.947566] cloud-init[6621]: replacing  python-six.noarch 1.9.0-2.amzn2
+[   84.947784] cloud-init[6621]: Updating:
+[   84.948007] cloud-init[6621]: PyYAML                         x86_64 3.10-11.amzn2.0.3       amzn2-core 180 k
+[   84.948215] cloud-init[6621]: acpid                          x86_64 2.0.19-9.amzn2.0.2      amzn2-core  68 k
+[   84.948433] cloud-init[6621]: amazon-linux-extras            noarch 2.0.3-1.amzn2           amzn2-core  39 k
+[   84.948645] cloud-init[6621]: amazon-linux-extras-yum-plugin noarch 2.0.3-1.amzn2           amzn2-core  11 k
+[   84.948871] cloud-init[6621]: aws-cfn-bootstrap              noarch 2.0-39.amzn2            amzn2-core 763 k
+[   84.949090] cloud-init[6621]: awscli                         noarch 1.18.147-1.amzn2.0.2    amzn2-core 2.1 M
+[   84.949304] cloud-init[6621]: binutils                       x86_64 2.29.1-31.amzn2.0.2     amzn2-core 5.8 M
+[   84.949529] cloud-init[6621]: boost-date-time                x86_64 1.53.0-27.amzn2.0.7     amzn2-core  52 k
+[   84.949968] cloud-init[6621]: boost-system                   x86_64 1.53.0-27.amzn2.0.7     amzn2-core  40 k
+[   84.950325] cloud-init[6621]: boost-thread                   x86_64 1.53.0-27.amzn2.0.7     amzn2-core  74 k
+[   84.950510] cloud-init[6621]: chrony                         x86_64 4.2-5.amzn2.0.2         amzn2-core 302 k
+[   84.950724] cloud-init[6621]: cyrus-sasl-lib                 x86_64 2.1.26-24.amzn2.0.1     amzn2-core 154 k
+[   84.950942] cloud-init[6621]: cyrus-sasl-plain               x86_64 2.1.26-24.amzn2.0.1     amzn2-core  39 k
+[   84.951151] cloud-init[6621]: dhclient                       x86_64 12:4.2.5-79.amzn2.1.5   amzn2-core 287 k
+[   84.951370] cloud-init[6621]: dhcp-common                    x86_64 12:4.2.5-79.amzn2.1.5   amzn2-core 177 k
+[   84.951584] cloud-init[6621]: dhcp-libs                      x86_64 12:4.2.5-79.amzn2.1.5   amzn2-core 132 k
+[   84.951817] cloud-init[6621]: dmidecode                      x86_64 1:3.2-5.amzn2.1.1       amzn2-core  82 k
+[   84.952004] cloud-init[6621]: dracut                         x86_64 033-535.amzn2.1.6       amzn2-core 325 k
+[   84.952221] cloud-init[6621]: dracut-config-generic          x86_64 033-535.amzn2.1.6       amzn2-core  57 k
+[   84.952436] cloud-init[6621]: e2fsprogs                      x86_64 1.42.9-19.amzn2.0.1     amzn2-core 700 k
+[   84.952824] cloud-init[6621]: e2fsprogs-libs                 x86_64 1.42.9-19.amzn2.0.1     amzn2-core 166 k
+[   84.952989] cloud-init[6621]: ec2-hibinit-agent              noarch 1.0.10-2.amzn2          amzn2-core  17 k
+[   84.953200] cloud-init[6621]: ec2-instance-connect           noarch 1.1-19.amzn2            amzn2-core  20 k
+[   84.953413] cloud-init[6621]: ec2-net-utils                  noarch 1.7.3-1.amzn2           amzn2-core  21 k
+[   84.954829] cloud-init[6621]: ec2-utils                      noarch 1.2-48.amzn2            amzn2-core  14 k
+[   84.955134] cloud-init[6621]: elfutils-default-yama-scope    noarch 0.176-2.amzn2.0.2       amzn2-core  33 k
+[   84.955375] cloud-init[6621]: elfutils-libelf                x86_64 0.176-2.amzn2.0.2       amzn2-core 194 k
+[   84.955567] cloud-init[6621]: elfutils-libs                  x86_64 0.176-2.amzn2.0.2       amzn2-core 289 k
+[   84.955798] cloud-init[6621]: gawk                           x86_64 4.0.2-4.amzn2.1.3       amzn2-core 873 k
+[   84.955999] cloud-init[6621]: gmp                            x86_64 1:6.0.0-15.amzn2.0.3    amzn2-core 276 k
+[   84.956217] cloud-init[6621]: hibagent                       noarch 1.1.0-6.amzn2           amzn2-core  18 k
+[   84.956424] cloud-init[6621]: initscripts                    x86_64 9.49.47-1.amzn2.0.3     amzn2-core 440 k
+[   84.956641] cloud-init[6621]: iproute                        x86_64 5.10.0-2.amzn2.0.3      amzn2-core 649 k
+[   84.956862] cloud-init[6621]: iputils                        x86_64 20180629-11.amzn2.1.20160308
+[   84.957069] cloud-init[6621]: amzn2-core 147 k
+[   84.957289] cloud-init[6621]: jbigkit-libs                   x86_64 2.0-11.amzn2.0.3        amzn2-core  47 k
+[   84.957507] cloud-init[6621]: kpatch-runtime                 noarch 0.9.4-8.amzn2           amzn2-core  28 k
+[   84.957924] cloud-init[6621]: libblkid                       x86_64 2.30.2-2.amzn2.0.13     amzn2-core 191 k
+[   84.958142] cloud-init[6621]: libcom_err                     x86_64 1.42.9-19.amzn2.0.1     amzn2-core  42 k
+[   84.958360] cloud-init[6621]: libdwarf                       x86_64 20130207-4.amzn2.0.3    amzn2-core 109 k
+[   85.013883] cloud-init[6621]: libfastjson                    x86_64 0.99.4-3.amzn2.0.1      amzn2-core  27 k
+[   85.014146] cloud-init[6621]: libfdisk                       x86_64 2.30.2-2.amzn2.0.13     amzn2-core 238 k
+[   85.014334] cloud-init[6621]: libgcc                         x86_64 7.3.1-18.amzn2          amzn2-core  99 k
+[   85.014553] cloud-init[6621]: libgcrypt                      x86_64 1.5.3-14.amzn2.0.3      amzn2-core 265 k
+[   85.014768] cloud-init[6621]: libgomp                        x86_64 7.3.1-18.amzn2          amzn2-core 205 k
+[   85.014980] cloud-init[6621]: libidn                         x86_64 1.28-4.amzn2.0.5        amzn2-core 209 k
+[   85.015191] cloud-init[6621]: libidn2                        x86_64 2.3.0-1.amzn2.0.3       amzn2-core 140 k
+[   85.015674] cloud-init[6621]: libmount                       x86_64 2.30.2-2.amzn2.0.13     amzn2-core 213 k
+[   85.015886] cloud-init[6621]: libseccomp                     x86_64 2.5.2-1.amzn2.0.1       amzn2-core  65 k
+[   85.016094] cloud-init[6621]: libsepol                       x86_64 2.5-10.amzn2.0.1        amzn2-core 292 k
+[   85.016312] cloud-init[6621]: libsmartcols                   x86_64 2.30.2-2.amzn2.0.13     amzn2-core 155 k
+[   85.016529] cloud-init[6621]: libss                          x86_64 1.42.9-19.amzn2.0.1     amzn2-core  47 k
+[   85.016749] cloud-init[6621]: libstdc++                      x86_64 7.3.1-18.amzn2          amzn2-core 446 k
+[   85.016966] cloud-init[6621]: libuuid                        x86_64 2.30.2-2.amzn2.0.13     amzn2-core  80 k
+[   85.017191] cloud-init[6621]: libwebp                        x86_64 0.3.0-10.amzn2.0.2      amzn2-core 170 k
+[   85.017920] cloud-init[6621]: lz4                            x86_64 1.7.5-2.amzn2.0.2       amzn2-core  98 k
+[   85.018161] cloud-init[6621]: mariadb-libs                   x86_64 1:5.5.68-1.amzn2.0.1    amzn2-core 767 k
+[   85.018501] cloud-init[6621]: mdadm                          x86_64 4.0-5.amzn2.0.3         amzn2-core 426 k
+[   85.018725] cloud-init[6621]: nano                           x86_64 2.9.8-2.amzn2.0.2       amzn2-core 569 k
+[   85.018950] cloud-init[6621]: net-tools                      x86_64 2.0-0.22.20131004git.amzn2.0.3
+[   85.019168] cloud-init[6621]: amzn2-core 304 k
+[   85.019387] cloud-init[6621]: pam                            x86_64 1.1.8-23.amzn2.0.5      amzn2-core 717 k
+[   85.019600] cloud-init[6621]: pcre                           x86_64 8.32-17.amzn2.0.3       amzn2-core 430 k
+[   85.019813] cloud-init[6621]: pcre2                          x86_64 10.23-11.amzn2.0.2      amzn2-core 208 k
+[   85.020033] cloud-init[6621]: perl-File-Path                 noarch 2.09-2.amzn2.0.1        amzn2-core  27 k
+[   85.020255] cloud-init[6621]: python-babel                   noarch 0.9.6-8.amzn2.0.2       amzn2-core 1.4 M
+[   85.020490] cloud-init[6621]: python-configobj               noarch 4.7.2-7.amzn2.0.1       amzn2-core 117 k
+[   85.020705] cloud-init[6621]: python-idna                    noarch 2.4-1.amzn2.0.1         amzn2-core  97 k
+[   85.020924] cloud-init[6621]: python-ipaddress               noarch 1.0.16-2.amzn2.0.3      amzn2-core  35 k
+[   85.021140] cloud-init[6621]: python-requests                noarch 2.6.0-10.amzn2.0.7      amzn2-core 100 k
+[   85.021373] cloud-init[6621]: python2-botocore               noarch 1.18.6-1.amzn2.0.3      amzn2-core 4.4 M
+[   85.021616] cloud-init[6621]: python2-cryptography           x86_64 1.7.2-2.amzn2.0.1       amzn2-core 505 k
+[   85.021818] cloud-init[6621]: python2-dateutil               noarch 1:2.6.1-3.amzn2         amzn2-core 251 k
+[   85.022066] cloud-init[6621]: python2-jmespath               noarch 0.9.3-1.amzn2.0.2       amzn2-core  42 k
+[   85.022297] cloud-init[6621]: python2-jsonschema             noarch 2.5.1-3.amzn2.0.2       amzn2-core  75 k
+[   85.022528] cloud-init[6621]: python2-rpm                    x86_64 4.11.3-48.amzn2.0.5     amzn2-core  85 k
+[   85.022750] cloud-init[6621]: python2-rsa                    noarch 3.4.1-1.amzn2.0.4       amzn2-core  67 k
+[   85.022965] cloud-init[6621]: rpm                            x86_64 4.11.3-48.amzn2.0.5     amzn2-core 1.2 M
+[   85.023181] cloud-init[6621]: rpm-build-libs                 x86_64 4.11.3-48.amzn2.0.5     amzn2-core 107 k
+[   85.023413] cloud-init[6621]: rpm-libs                       x86_64 4.11.3-48.amzn2.0.5     amzn2-core 277 k
+[   85.023624] cloud-init[6621]: rpm-plugin-systemd-inhibit     x86_64 4.11.3-48.amzn2.0.5     amzn2-core  48 k
+[   85.023840] cloud-init[6621]: screen                         x86_64 4.1.0-0.27.20120314git3c2946.amzn2.0.2
+[   85.116155] cloud-init[6621]: amzn2-core 549 k
+[   85.117217] cloud-init[6621]: selinux-policy                 noarch 3.13.1-192.amzn2.6.8    amzn2-core 456 k
+[   85.117666] cloud-init[6621]: selinux-policy-targeted        noarch 3.13.1-192.amzn2.6.8    amzn2-core 6.6 M
+[   85.118152] cloud-init[6621]: shadow-utils                   x86_64 2:4.1.5.1-24.amzn2.0.3  amzn2-core 1.1 M
+[   85.118542] cloud-init[6621]: sysctl-defaults                noarch 1.0-3.amzn2             amzn2-core 3.9 k
+[   85.118797] cloud-init[6621]: system-release                 x86_64 1:2-17.amzn2            amzn2-core  19 k
+[   85.119686] cloud-init[6621]: systemtap-runtime              x86_64 4.5-1.amzn2.0.3         amzn2-core 475 k
+[   85.119963] cloud-init[6621]: tcpdump                        x86_64 14:4.9.2-4.amzn2.1.0.1  amzn2-core 424 k
+[   85.120460] cloud-init[6621]: traceroute                     x86_64 3:2.0.22-2.amzn2.0.2    amzn2-core  58 k
+[   85.121240] cloud-init[6621]: tzdata                         noarch 2026b-1.amzn2.0.1       amzn2-core 484 k
+[   85.121614] cloud-init[6621]: unzip                          x86_64 6.0-57.amzn2.0.1        amzn2-core 182 k
+[   85.122096] cloud-init[6621]: util-linux                     x86_64 2.30.2-2.amzn2.0.13     amzn2-core 2.3 M
+[   85.122543] cloud-init[6621]: xfsprogs                       x86_64 5.0.0-10.amzn2.0.1      amzn2-core 1.0 M
+[   85.122935] cloud-init[6621]: yajl                           x86_64 2.0.4-4.amzn2.0.3       amzn2-core  40 k
+[   85.123170] cloud-init[6621]: Installing for dependencies:
+[   85.123397] cloud-init[6621]: amd-ucode-firmware             noarch 20200421-85.git78c0348.amzn2
+[   85.123629] cloud-init[6621]: amzn2-core 154 k
+[   85.123917] cloud-init[6621]: ec2-instance-connect-selinux   noarch 1.1-19.amzn2            amzn2-core 7.2 k
+[   85.124369] cloud-init[6621]: Transaction Summary
+[   85.124612] cloud-init[6621]: ================================================================================
+[   85.125001] cloud-init[6621]: Install   3 Packages (+2 Dependent packages)
+[   85.125400] cloud-init[6621]: Upgrade  93 Packages
+[   85.125970] cloud-init[6621]: Total download size: 77 M
+[   85.126172] cloud-init[6621]: Downloading packages:
+[   85.126387] cloud-init[6621]: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+[   87.126993] cloud-init[6621]: --------------------------------------------------------------------------------
+[   87.129120] cloud-init[6621]: Total                                               35 MB/s |  77 MB  00:02
+[   87.337868] cloud-init[6621]: Running transaction check
+[   87.552253] cloud-init[6621]: Running transaction test
+[   88.148788] cloud-init[6621]: Transaction test succeeded
+[   88.150030] cloud-init[6621]: Running transaction
+[   88.530321] cloud-init[6621]: Updating   : elfutils-libelf-0.176-2.amzn2.0.2.x86_64                   1/193
+[   88.614840] cloud-init[6621]: Updating   : libgcc-7.3.1-18.amzn2.x86_64                               2/193
+[   88.648428] cloud-init[6621]: Updating   : libstdc++-7.3.1-18.amzn2.x86_64                            3/193
+[   88.876046] cloud-init[6621]: Updating   : libcom_err-1.42.9-19.amzn2.0.1.x86_64                      4/193
+[   88.904434] cloud-init[6621]: Updating   : 2:shadow-utils-4.1.5.1-24.amzn2.0.3.x86_64                 5/193
+[   88.948612] cloud-init[6621]: Updating   : libuuid-2.30.2-2.amzn2.0.13.x86_64                         6/193
+[   89.009266] cloud-init[6621]: Updating   : libblkid-2.30.2-2.amzn2.0.13.x86_64                        7/193
+[   89.160850] cloud-init[6621]: Updating   : rpm-libs-4.11.3-48.amzn2.0.5.x86_64                        8/193
+[   89.274074] cloud-init[6621]: Updating   : rpm-4.11.3-48.amzn2.0.5.x86_64                             9/193
+[   89.369570] cloud-init[6621]: Updating   : iproute-5.10.0-2.amzn2.0.3.x86_64                         10/193
+[   89.442102] cloud-init[6621]: Updating   : gawk-4.0.2-4.amzn2.1.3.x86_64                             11/193
+[   89.467154] cloud-init[6621]: Updating   : 1:system-release-2-17.amzn2.x86_64                        12/193
+[   89.501814] cloud-init[6621]: Updating   : boost-system-1.53.0-27.amzn2.0.7.x86_64                   13/193
+[   89.529395] cloud-init[6621]: Installing : python2-six-1.11.0-8.amzn2.0.1.noarch                     14/193
+[   89.684745] cloud-init[6621]: Updating   : 12:dhcp-libs-4.2.5-79.amzn2.1.5.x86_64                    15/193
+         Stopping Command Scheduler...
+[[32m  OK  [0m] Stopped Command Scheduler.
+[[32m  OK  [0m] Started Command Scheduler.
+[   89.760914] cloud-init[6621]: Updating   : pam-1.1.8-23.amzn2.0.5.x86_64                             16/193
+[   89.790553] cloud-init[6621]: Updating   : 12:dhcp-common-4.2.5-79.amzn2.1.5.x86_64                  17/193
+[   89.819583] cloud-init[6621]: Updating   : amazon-linux-extras-2.0.3-1.amzn2.noarch                  18/193
+[   90.655446] cloud-init[6621]: Updating   : selinux-policy-3.13.1-192.amzn2.6.8.noarch                19/193
+[   90.732674] cloud-init[6621]: Updating   : selinux-policy-targeted-3.13.1-192.amzn2.6.8.noarch       20/193
+[  103.714427] cloud-init[6621]: Installing : ec2-instance-connect-selinux-1.1-19.amzn2.noarch          21/193
+[  103.716554] cloud-init[6621]: libsemanage.semanage_direct_install_info: Overriding ec2-instance-connect module at lower priority 100 with module at priority 200.
+[  103.805323] cloud-init[6621]: Updating   : rpm-build-libs-4.11.3-48.amzn2.0.5.x86_64                 22/193
+[  103.855255] cloud-init[6621]: Updating   : libmount-2.30.2-2.amzn2.0.13.x86_64                       23/193
+[  103.902081] cloud-init[6621]: Updating   : libfdisk-2.30.2-2.amzn2.0.13.x86_64                       24/193
+[  103.948887] cloud-init[6621]: Updating   : e2fsprogs-libs-1.42.9-19.amzn2.0.1.x86_64                 25/193
+[  103.982615] cloud-init[6621]: Updating   : cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64                 26/193
+[  104.028695] cloud-init[6621]: Updating   : libss-1.42.9-19.amzn2.0.1.x86_64                          27/193
+[  104.064138] cloud-init[6621]: Updating   : python-idna-2.4-1.amzn2.0.1.noarch                        28/193
+[  104.114141] cloud-init[6621]: Installing : amd-ucode-firmware-20200421-85.git78c0348.amzn2.noarch    29/193
+[  104.147557] cloud-init[6621]: Updating   : python2-rsa-3.4.1-1.amzn2.0.4.noarch                      30/193
+[  104.188674] cloud-init[6621]: Updating   : acpid-2.0.19-9.amzn2.0.2.x86_64                           31/193
+[  104.540559] cloud-init[6621]: Updating   : libsmartcols-2.30.2-2.amzn2.0.13.x86_64                   32/193
+[  104.587701] cloud-init[6621]: Updating   : util-linux-2.30.2-2.amzn2.0.13.x86_64                     33/193
+[  104.629334] cloud-init[6621]: Updating   : elfutils-default-yama-scope-0.176-2.amzn2.0.2.noarch      34/193
+[  104.723038] cloud-init[6621]: Updating   : lz4-1.7.5-2.amzn2.0.2.x86_64                              35/193
+[  104.776869] cloud-init[6621]: Updating   : dracut-033-535.amzn2.1.6.x86_64                           36/193
+[  104.807498] cloud-init[6621]: Updating   : PyYAML-3.10-11.amzn2.0.3.x86_64                           37/193
+[  105.505671] cloud-init[6621]: Updating   : libseccomp-2.5.2-1.amzn2.0.1.x86_64                       38/193
+[  105.575530] cloud-init[6621]: Updating   : binutils-2.29.1-31.amzn2.0.2.x86_64                       39/193
+[  105.797366] cloud-init[6621]: Updating   : python2-jmespath-0.9.3-1.amzn2.0.2.noarch                 40/193
+[  105.862531] cloud-init[6621]: Updating   : tzdata-2026b-1.amzn2.0.1.noarch                           41/193
+[  106.866670] cloud-init[6621]: Updating   : 1:python2-dateutil-2.6.1-3.amzn2.noarch                   42/193
+[  106.914404] cloud-init[6621]: Updating   : python2-botocore-1.18.6-1.amzn2.0.3.noarch                43/193
+[  106.942491] cloud-init[6621]: Installing : python2-colorama-0.3.9-3.amzn2.0.1.noarch                 44/193
+[  106.987700] cloud-init[6621]: Updating   : python-ipaddress-1.0.16-2.amzn2.0.3.noarch                45/193
+[  107.038398] cloud-init[6621]: Updating   : libidn-1.28-4.amzn2.0.5.x86_64                            46/193
+[  107.138040] cloud-init[6621]: Updating   : iputils-20180629-11.amzn2.1.20160308.x86_64               47/193
+[  107.344799] cloud-init[6621]: Updating   : initscripts-9.49.47-1.amzn2.0.3.x86_64                    48/193
+[  107.372335] cloud-init[6621]: Updating   : 12:dhclient-4.2.5-79.amzn2.1.5.x86_64                     49/193
+[  110.641811] cloud-init[6621]: Updating   : ec2-net-utils-1.7.3-1.amzn2.noarch                        50/193
+[  111.270949] cloud-init[6621]: Installing : kernel-5.10.255-253.1008.amzn2.x86_64                     51/193
+[  112.213877] cloud-init[6621]: Updating   : python2-cryptography-1.7.2-2.amzn2.0.1.x86_64             52/193
+[  112.270540] cloud-init[6621]: Updating   : awscli-1.18.147-1.amzn2.0.2.noarch                        53/193
+[  112.328946] cloud-init[6621]: Updating   : kpatch-runtime-0.9.4-8.amzn2.noarch                       54/193
+[  112.360358] cloud-init[6621]: Updating   : chrony-4.2-5.amzn2.0.2.x86_64                             55/193
+[  112.413063] cloud-init[6621]: Updating   : dracut-config-generic-033-535.amzn2.1.6.x86_64            56/193
+[  112.445627] cloud-init[6621]: Updating   : elfutils-libs-0.176-2.amzn2.0.2.x86_64                    57/193
+[  112.557844] cloud-init[6621]: Updating   : ec2-hibinit-agent-1.0.10-2.amzn2.noarch                   58/193
+[  112.585328] cloud-init[6621]: Updating   : e2fsprogs-1.42.9-19.amzn2.0.1.x86_64                      59/193
+[  112.612033] cloud-init[6621]: Updating   : cyrus-sasl-plain-2.1.26-24.amzn2.0.1.x86_64               60/193
+[  112.654790] cloud-init[6621]: Updating   : python2-rpm-4.11.3-48.amzn2.0.5.x86_64                    61/193
+[  112.655093] cloud-init[6621]: ec2-instance-connect:x:997:995::/home/ec2-instance-connect:/sbin/nologin
+         Stopping OpenSSH server daemon...
+[[32m  OK  [0m] Stopped OpenSSH server daemon.
+         Starting OpenSSH server daemon...
+[[32m  OK  [0m] Started OpenSSH server daemon.
+[  112.814525] cloud-init[6621]: Updating   : ec2-instance-connect-1.1-19.amzn2.noarch                  62/193
+[  112.886202] cloud-init[6621]: Updating   : amazon-linux-extras-yum-plugin-2.0.3-1.amzn2.noarch       63/193
+[  112.983957] cloud-init[6621]: Updating   : screen-4.1.0-0.27.20120314git3c2946.amzn2.0.2.x86_64      64/193
+[  113.012735] cloud-init[6621]: Updating   : systemtap-runtime-4.5-1.amzn2.0.3.x86_64                  65/193
+[  113.043555] cloud-init[6621]: Updating   : boost-thread-1.53.0-27.amzn2.0.7.x86_64                   66/193
+[  113.202226] cloud-init[6621]: Updating   : rpm-plugin-systemd-inhibit-4.11.3-48.amzn2.0.5.x86_64     67/193
+[  113.283576] cloud-init[6621]: Updating   : xfsprogs-5.0.0-10.amzn2.0.1.x86_64                        68/193
+[  113.418043] cloud-init[6621]: Updating   : 14:tcpdump-4.9.2-4.amzn2.1.0.1.x86_64                     69/193
+[  113.501334] cloud-init[6621]: Updating   : 1:mariadb-libs-5.5.68-1.amzn2.0.1.x86_64                  70/193
+[  113.571660] cloud-init[6621]: Updating   : pcre-8.32-17.amzn2.0.3.x86_64                             71/193
+[  113.604830] cloud-init[6621]: Updating   : 1:gmp-6.0.0-15.amzn2.0.3.x86_64                           72/193
+[  113.646587] cloud-init[6621]: Updating   : boost-date-time-1.53.0-27.amzn2.0.7.x86_64                73/193
+[  113.678757] cloud-init[6621]: Updating   : libdwarf-20130207-4.amzn2.0.3.x86_64                      74/193
+[  113.774995] cloud-init[6621]: Updating   : perl-File-Path-2.09-2.amzn2.0.1.noarch                    75/193
+[  113.835936] cloud-init[6621]: Updating   : nano-2.9.8-2.amzn2.0.2.x86_64                             76/193
+[  113.994256] cloud-init[6621]: Updating   : libsepol-2.5-10.amzn2.0.1.x86_64                          77/193
+[  114.039772] cloud-init[6621]: Updating   : 1:dmidecode-3.2-5.amzn2.1.1.x86_64                        78/193
+[  114.069897] cloud-init[6621]: Updating   : libgcrypt-1.5.3-14.amzn2.0.3.x86_64                       79/193
+[  114.108027] cloud-init[6621]: Updating   : sysctl-defaults-1.0-3.amzn2.noarch                        80/193
+[  114.131024] cloud-init[6621]: Updating   : unzip-6.0-57.amzn2.0.1.x86_64                             81/193
+[  114.155541] cloud-init[6621]: Updating   : ec2-utils-1.2-48.amzn2.noarch                             82/193
+[  114.185179] cloud-init[6621]: Updating   : hibagent-1.1.0-6.amzn2.noarch                             83/193
+[  114.230124] cloud-init[6621]: Updating   : libfastjson-0.99.4-3.amzn2.0.1.x86_64                     84/193
+[  114.255517] cloud-init[6621]: Updating   : python-configobj-4.7.2-7.amzn2.0.1.noarch                 85/193
+[  114.301319] cloud-init[6621]: Updating   : 3:traceroute-2.0.22-2.amzn2.0.2.x86_64                    86/193
+[  114.376322] cloud-init[6621]: Updating   : libidn2-2.3.0-1.amzn2.0.3.x86_64                          87/193
+[  114.425405] cloud-init[6621]: Updating   : mdadm-4.0-5.amzn2.0.3.x86_64                              88/193
+[  114.470859] cloud-init[6621]: Updating   : python-requests-2.6.0-10.amzn2.0.7.noarch                 89/193
+[  114.512277] cloud-init[6621]: Updating   : pcre2-10.23-11.amzn2.0.2.x86_64                           90/193
+[  114.575895] cloud-init[6621]: Updating   : python2-jsonschema-2.5.1-3.amzn2.0.2.noarch               91/193
+[  114.851891] cloud-init[6621]: Updating   : net-tools-2.0-0.22.20131004git.amzn2.0.3.x86_64           92/193
+[  114.911606] cloud-init[6621]: Updating   : python-babel-0.9.6-8.amzn2.0.2.noarch                     93/193
+[  115.099782] cloud-init[6621]: Updating   : libgomp-7.3.1-18.amzn2.x86_64                             94/193
+[  115.133660] cloud-init[6621]: Updating   : aws-cfn-bootstrap-2.0-39.amzn2.noarch                     95/193
+[  115.180356] cloud-init[6621]: Updating   : jbigkit-libs-2.0-11.amzn2.0.3.x86_64                      96/193
+[  115.215607] cloud-init[6621]: Updating   : libwebp-0.3.0-10.amzn2.0.2.x86_64                         97/193
+[  115.265519] cloud-init[6621]: Updating   : yajl-2.0.4-4.amzn2.0.3.x86_64                             98/193
+[  115.319925] cloud-init[6621]: Cleanup    : awscli-1.18.147-1.amzn2.0.1.noarch                        99/193
+[  115.356674] cloud-init[6621]: Cleanup    : python2-botocore-1.18.6-1.amzn2.0.1.noarch               100/193
+[  115.385236] cloud-init[6621]: Cleanup    : 1:python2-dateutil-2.6.0-3.amzn2.0.1.noarch              101/193
+[  115.406473] cloud-init[6621]: Cleanup    : ec2-net-utils-1.6-1.amzn2.noarch                         102/193
+[  115.428569] cloud-init[6621]: Cleanup    : 12:dhclient-4.2.5-77.amzn2.1.5.x86_64                    103/193
+[  115.448258] cloud-init[6621]: Cleanup    : 12:dhcp-common-4.2.5-77.amzn2.1.5.x86_64                 104/193
+[  115.475119] cloud-init[6621]: Cleanup    : kpatch-runtime-0.9.4-3.amzn2.noarch                      105/193
+[  115.574360] cloud-init[6621]: Cleanup    : ec2-hibinit-agent-1.0.2-3.amzn2.noarch                   106/193
+[  115.594228] cloud-init[6621]: Cleanup    : amazon-linux-extras-yum-plugin-2.0.1-1.amzn2.noarch      107/193
+[  115.621974] cloud-init[6621]: Cleanup    : amazon-linux-extras-2.0.1-1.amzn2.noarch                 108/193
+[  115.715867] cloud-init[6621]: Cleanup    : ec2-instance-connect-1.1-15.amzn2.noarch                 109/193
+[  115.745415] cloud-init[6621]: Cleanup    : dracut-config-generic-033-535.amzn2.1.5.x86_64           110/193
+[  115.793362] cloud-init[6621]: Cleanup    : selinux-policy-targeted-3.13.1-192.amzn2.6.7.noarch      111/193
+[  115.969383] cloud-init[6621]: Cleanup    : initscripts-9.49.47-1.amzn2.0.1.x86_64                   112/193
+[  115.991105] cloud-init[6621]: Cleanup    : e2fsprogs-1.42.9-19.amzn2.x86_64                         113/193
+[  116.014764] cloud-init[6621]: Cleanup    : python2-rpm-4.11.3-40.amzn2.0.6.x86_64                   114/193
+[  116.038838] cloud-init[6621]: Cleanup    : systemtap-runtime-4.4-1.amzn2.0.2.x86_64                 115/193
+[  116.068160] cloud-init[6621]: Cleanup    : dracut-033-535.amzn2.1.5.x86_64                          116/193
+[  116.095958] cloud-init[6621]: Cleanup    : util-linux-2.30.2-2.amzn2.0.5.x86_64                     117/193
+[  116.125600] cloud-init[6621]: Cleanup    : boost-thread-1.53.0-27.amzn2.0.5.x86_64                  118/193
+[  116.164665] cloud-init[6621]: Cleanup    : python2-cryptography-1.7.2-2.amzn2.x86_64                119/193
+[  116.262685] cloud-init[6621]: Cleanup    : selinux-policy-3.13.1-192.amzn2.6.7.noarch               120/193
+[  116.290555] cloud-init[6621]: Cleanup    : boost-system-1.53.0-27.amzn2.0.5.x86_64                  121/193
+[  116.318245] cloud-init[6621]: Cleanup    : libfdisk-2.30.2-2.amzn2.0.5.x86_64                       122/193
+[  116.346217] cloud-init[6621]: Cleanup    : libmount-2.30.2-2.amzn2.0.5.x86_64                       123/193
+[  116.374485] cloud-init[6621]: Cleanup    : rpm-build-libs-4.11.3-40.amzn2.0.6.x86_64                124/193
+[  116.401477] cloud-init[6621]: Cleanup    : boost-date-time-1.53.0-27.amzn2.0.5.x86_64               125/193
+[  116.421434] cloud-init[6621]: Cleanup    : cyrus-sasl-plain-2.1.26-24.amzn2.x86_64                  126/193
+[  116.450552] cloud-init[6621]: Cleanup    : 1:gmp-6.0.0-15.amzn2.0.2.x86_64                          127/193
+[  116.484041] cloud-init[6621]: Cleanup    : pcre-8.32-17.amzn2.0.2.x86_64                            128/193
+[  116.504358] cloud-init[6621]: Cleanup    : screen-4.1.0-0.27.20120314git3c2946.amzn2.x86_64         129/193
+[  116.524272] cloud-init[6621]: Cleanup    : rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.6.x86_64    130/193
+[  116.553093] cloud-init[6621]: Cleanup    : rpm-libs-4.11.3-40.amzn2.0.6.x86_64                      131/193
+[  116.577192] cloud-init[6621]: Cleanup    : rpm-4.11.3-40.amzn2.0.6.x86_64                           132/193
+[  116.605902] cloud-init[6621]: Cleanup    : elfutils-libs-0.176-2.amzn2.x86_64                       133/193
+[  116.641345] cloud-init[6621]: Cleanup    : xfsprogs-4.5.0-18.amzn2.0.1.x86_64                       134/193
+         Stopping NTP client/server...
+[[32m  OK  [0m] Stopped NTP client/server.
+         Starting NTP client/server...
+[  116.675052] xfs filesystem being remounted at /tmp supports timestamps until 2038 (0x7fffffff)
+[  116.679097] xfs filesystem being remounted at /var/tmp supports timestamps until 2038 (0x7fffffff)
+[[32m  OK  [0m] Started NTP client/server.
+[  116.763555] cloud-init[6621]: Cleanup    : chrony-4.0-3.amzn2.0.2.x86_64                            135/193
+[  116.791933] cloud-init[6621]: Cleanup    : libblkid-2.30.2-2.amzn2.0.5.x86_64                       136/193
+[  116.820838] cloud-init[6621]: Cleanup    : cyrus-sasl-lib-2.1.26-24.amzn2.x86_64                    137/193
+[  116.848323] cloud-init[6621]: Cleanup    : e2fsprogs-libs-1.42.9-19.amzn2.x86_64                    138/193
+[  116.881995] cloud-init[6621]: Cleanup    : libss-1.42.9-19.amzn2.x86_64                             139/193
+[  116.985396] cloud-init[6621]: Cleanup    : iputils-20160308-10.amzn2.0.2.x86_64                     140/193
+[  117.007911] cloud-init[6621]: Cleanup    : iproute-5.10.0-2.amzn2.0.1.x86_64                        141/193
+[  117.039903] cloud-init[6621]: Cleanup    : 1:mariadb-libs-5.5.68-1.amzn2.x86_64                     142/193
+[  117.069019] cloud-init[6621]: Cleanup    : libstdc++-7.3.1-13.amzn2.x86_64                          143/193
+[  117.089267] cloud-init[6621]: Cleanup    : 14:tcpdump-4.9.2-4.amzn2.1.x86_64                        144/193
+[  117.117422] cloud-init[6621]: Cleanup    : libdwarf-20130207-4.amzn2.0.2.x86_64                     145/193
+[  117.137254] cloud-init[6621]: Cleanup    : elfutils-default-yama-scope-0.176-2.amzn2.noarch         146/193
+[  117.157120] cloud-init[6621]: Cleanup    : 1:system-release-2-14.amzn2.x86_64                       147/193
+[  117.176781] cloud-init[6621]: Cleanup    : python-idna-2.4-1.amzn2.noarch                           148/193
+[  117.197526] cloud-init[6621]: Cleanup    : python-ipaddress-1.0.16-2.amzn2.noarch                   149/193
+[  117.218113] cloud-init[6621]: Erasing    : python-six-1.9.0-2.amzn2.noarch                          150/193
+[  117.253819] cloud-init[6621]: Cleanup    : 12:dhcp-libs-4.2.5-77.amzn2.1.5.x86_64                   151/193
+[  117.281542] cloud-init[6621]: Cleanup    : tzdata-2021e-1.amzn2.noarch                              152/193
+[  117.303625] cloud-init[6621]: Cleanup    : python2-jmespath-0.9.3-1.amzn2.0.1.noarch                153/193
+[  117.325581] cloud-init[6621]: Erasing    : python-colorama-0.3.2-3.amzn2.noarch                     154/193
+[  117.348025] cloud-init[6621]: Cleanup    : python2-rsa-3.4.1-1.amzn2.0.1.noarch                     155/193
+[  117.367944] cloud-init[6621]: Cleanup    : perl-File-Path-2.09-2.amzn2.noarch                       156/193
+[  117.388281] cloud-init[6621]: Cleanup    : sysctl-defaults-1.0-2.amzn2.noarch                       157/193
+[  117.414629] cloud-init[6621]: Cleanup    : ec2-utils-1.2-47.amzn2.noarch                            158/193
+[  117.506216] cloud-init[6621]: Cleanup    : hibagent-1.1.0-5.amzn2.noarch                            159/193
+[  117.525432] cloud-init[6621]: Cleanup    : python-configobj-4.7.2-7.amzn2.noarch                    160/193
+[  117.548456] cloud-init[6621]: Cleanup    : python-requests-2.6.0-7.amzn2.noarch                     161/193
+[  117.572670] cloud-init[6621]: Cleanup    : python2-jsonschema-2.5.1-3.amzn2.0.1.noarch              162/193
+[  117.602345] cloud-init[6621]: Cleanup    : python-babel-0.9.6-8.amzn2.0.1.noarch                    163/193
+[  117.633598] cloud-init[6621]: Cleanup    : aws-cfn-bootstrap-2.0-10.amzn2.noarch                    164/193
+[  117.663964] cloud-init[6621]: Cleanup    : elfutils-libelf-0.176-2.amzn2.x86_64                     165/193
+[  117.685987] cloud-init[6621]: Cleanup    : 2:shadow-utils-4.1.5.1-24.amzn2.0.2.x86_64               166/193
+[  117.720062] cloud-init[6621]: Cleanup    : libgcc-7.3.1-13.amzn2.x86_64                             167/193
+[  117.749242] cloud-init[6621]: Cleanup    : libidn-1.28-4.amzn2.0.2.x86_64                           168/193
+[  117.778250] cloud-init[6621]: Cleanup    : libcom_err-1.42.9-19.amzn2.x86_64                        169/193
+[  117.806828] cloud-init[6621]: Cleanup    : libuuid-2.30.2-2.amzn2.0.5.x86_64                        170/193
+[  117.836140] cloud-init[6621]: Cleanup    : libseccomp-2.4.1-1.amzn2.x86_64                          171/193
+[  117.874947] cloud-init[6621]: Cleanup    : pam-1.1.8-23.amzn2.0.1.x86_64                            172/193
+[  117.896643] cloud-init[6621]: Cleanup    : gawk-4.0.2-4.amzn2.1.2.x86_64                            173/193
+[  117.924681] cloud-init[6621]: Cleanup    : libsmartcols-2.30.2-2.amzn2.0.5.x86_64                   174/193
+[  117.958236] cloud-init[6621]: Cleanup    : lz4-1.7.5-2.amzn2.0.1.x86_64                             175/193
+         Stopping ACPI Event Daemon...
+[[32m  OK  [0m] Stopped ACPI Event Daemon.
+         Starting ACPI Event Daemon...
+[[32m  OK  [0m] Started ACPI Event Daemon.
+[  118.212954] cloud-init[6621]: Cleanup    : acpid-2.0.19-9.amzn2.0.1.x86_64                          176/193
+[  118.266137] cloud-init[6621]: Cleanup    : binutils-2.29.1-31.amzn2.x86_64                          177/193
+[  118.293202] cloud-init[6621]: Cleanup    : PyYAML-3.10-11.amzn2.0.2.x86_64                          178/193
+[  118.316112] cloud-init[6621]: Cleanup    : nano-2.9.8-2.amzn2.0.1.x86_64                            179/193
+[  118.343603] cloud-init[6621]: Cleanup    : libsepol-2.5-8.1.amzn2.0.2.x86_64                        180/193
+[  118.362379] cloud-init[6621]: Cleanup    : 1:dmidecode-3.2-5.amzn2.1.x86_64                         181/193
+[  118.388999] cloud-init[6621]: Cleanup    : libgcrypt-1.5.3-14.amzn2.0.2.x86_64                      182/193
+[  118.409103] cloud-init[6621]: Cleanup    : unzip-6.0-43.amzn2.x86_64                                183/193
+[  118.436750] cloud-init[6621]: Cleanup    : libfastjson-0.99.4-3.amzn2.x86_64                        184/193
+[  118.457583] cloud-init[6621]: Cleanup    : 3:traceroute-2.0.22-2.amzn2.0.1.x86_64                   185/193
+[  118.492825] cloud-init[6621]: Cleanup    : libidn2-2.3.0-1.amzn2.x86_64                             186/193
+[  118.593595] cloud-init[6621]: Cleanup    : mdadm-4.0-5.amzn2.0.2.x86_64                             187/193
+[  118.621045] cloud-init[6621]: Cleanup    : pcre2-10.23-2.amzn2.0.2.x86_64                           188/193
+[  118.646871] cloud-init[6621]: Cleanup    : net-tools-2.0-0.22.20131004git.amzn2.0.2.x86_64          189/193
+[  118.674227] cloud-init[6621]: Cleanup    : libgomp-7.3.1-13.amzn2.x86_64                            190/193
+[  118.701674] cloud-init[6621]: Cleanup    : jbigkit-libs-2.0-11.amzn2.0.2.x86_64                     191/193
+[  118.728284] cloud-init[6621]: Cleanup    : libwebp-0.3.0-10.amzn2.x86_64                            192/193
+[  124.850733] cloud-init[6621]: Cleanup    : yajl-2.0.4-4.amzn2.0.1.x86_64                            193/193
+[[32m  OK  [0m] Stopped Dynamically Generate Message Of The Day.
+         Stopping Dynamically Generate Message Of The Day...
+         Starting Dynamically Generate Message Of The Day...
+[  124.873828] cloud-init[6621]: Verifying  : yajl-2.0.4-4.amzn2.0.3.x86_64                              1/193
+[  124.893133] cloud-init[6621]: Verifying  : selinux-policy-targeted-3.13.1-192.amzn2.6.8.noarch        2/193
+[  124.907499] cloud-init[6621]: Verifying  : 12:dhclient-4.2.5-79.amzn2.1.5.x86_64                      3/193
+[  124.918729] cloud-init[6621]: Verifying  : libdwarf-20130207-4.amzn2.0.3.x86_64                       4/193
+[  124.933663] cloud-init[6621]: Verifying  : util-linux-2.30.2-2.amzn2.0.13.x86_64                      5/193
+[  124.945500] cloud-init[6621]: Verifying  : libwebp-0.3.0-10.amzn2.0.2.x86_64                          6/193
+[  124.958264] cloud-init[6621]: Verifying  : jbigkit-libs-2.0-11.amzn2.0.3.x86_64                       7/193
+[  124.973077] cloud-init[6621]: Verifying  : aws-cfn-bootstrap-2.0-39.amzn2.noarch                      8/193
+[  124.988875] cloud-init[6621]: Verifying  : libgomp-7.3.1-18.amzn2.x86_64                              9/193
+[  125.004380] cloud-init[6621]: Verifying  : pam-1.1.8-23.amzn2.0.5.x86_64                             10/193
+[  125.016319] cloud-init[6621]: Verifying  : 14:tcpdump-4.9.2-4.amzn2.1.0.1.x86_64                     11/193
+[  125.027974] cloud-init[6621]: Verifying  : libidn-1.28-4.amzn2.0.5.x86_64                            12/193
+[  125.038698] cloud-init[6621]: Verifying  : python-babel-0.9.6-8.amzn2.0.2.noarch                     13/193
+[  125.049269] cloud-init[6621]: Verifying  : 1:system-release-2-17.amzn2.x86_64                        14/193
+[  125.062356] cloud-init[6621]: Verifying  : net-tools-2.0-0.22.20131004git.amzn2.0.3.x86_64           15/193
+[  125.073094] cloud-init[6621]: Verifying  : 1:python2-dateutil-2.6.1-3.amzn2.noarch                   16/193
+[  125.085660] cloud-init[6621]: Verifying  : dracut-config-generic-033-535.amzn2.1.6.x86_64            17/193
+[  125.097686] cloud-init[6621]: Verifying  : chrony-4.2-5.amzn2.0.2.x86_64                             18/193
+[  125.109682] cloud-init[6621]: Verifying  : amazon-linux-extras-2.0.3-1.amzn2.noarch                  19/193
+[  125.120372] cloud-init[6621]: Verifying  : python2-jsonschema-2.5.1-3.amzn2.0.2.noarch               20/193
+[  125.132209] cloud-init[6621]: Verifying  : python-ipaddress-1.0.16-2.amzn2.0.3.noarch                21/193
+[  125.145898] cloud-init[6621]: Verifying  : pcre2-10.23-11.amzn2.0.2.x86_64                           22/193
+[  125.158499] cloud-init[6621]: Verifying  : 12:dhcp-common-4.2.5-79.amzn2.1.5.x86_64                  23/193
+[  125.172358] cloud-init[6621]: Verifying  : python2-colorama-0.3.9-3.amzn2.0.1.noarch                 24/193
+[  125.185621] cloud-init[6621]: Verifying  : python-requests-2.6.0-10.amzn2.0.7.noarch                 25/193
+[  125.197106] cloud-init[6621]: Verifying  : tzdata-2026b-1.amzn2.0.1.noarch                           26/193
+[  125.208999] cloud-init[6621]: Verifying  : python2-jmespath-0.9.3-1.amzn2.0.2.noarch                 27/193
+[  125.220069] cloud-init[6621]: Verifying  : ec2-net-utils-1.7.3-1.amzn2.noarch                        28/193
+[  125.232216] cloud-init[6621]: Verifying  : binutils-2.29.1-31.amzn2.0.2.x86_64                       29/193
+[  125.244300] cloud-init[6621]: Verifying  : ec2-instance-connect-1.1-19.amzn2.noarch                  30/193
+[  125.257515] cloud-init[6621]: Verifying  : python2-rpm-4.11.3-48.amzn2.0.5.x86_64                    31/193
+[  125.270688] cloud-init[6621]: Verifying  : amazon-linux-extras-yum-plugin-2.0.3-1.amzn2.noarch       32/193
+[  125.281889] cloud-init[6621]: Verifying  : xfsprogs-5.0.0-10.amzn2.0.1.x86_64                        33/193
+[  125.293342] cloud-init[6621]: Verifying  : e2fsprogs-libs-1.42.9-19.amzn2.0.1.x86_64                 34/193
+[  125.305533] cloud-init[6621]: Verifying  : libgcc-7.3.1-18.amzn2.x86_64                              35/193
+[  125.318040] cloud-init[6621]: Verifying  : libuuid-2.30.2-2.amzn2.0.13.x86_64                        36/193
+[  125.329709] cloud-init[6621]: Verifying  : elfutils-libs-0.176-2.amzn2.0.2.x86_64                    37/193
+[  125.341147] cloud-init[6621]: Verifying  : libseccomp-2.5.2-1.amzn2.0.1.x86_64                       38/193
+[  125.353150] cloud-init[6621]: Verifying  : ec2-hibinit-agent-1.0.10-2.amzn2.noarch                   39/193
+[  125.365015] cloud-init[6621]: Verifying  : rpm-plugin-systemd-inhibit-4.11.3-48.amzn2.0.5.x86_64     40/193
+[  125.377361] cloud-init[6621]: Verifying  : PyYAML-3.10-11.amzn2.0.3.x86_64                           41/193
+[  125.389356] cloud-init[6621]: Verifying  : rpm-build-libs-4.11.3-48.amzn2.0.5.x86_64                 42/193
+[  125.401037] cloud-init[6621]: Verifying  : elfutils-libelf-0.176-2.amzn2.0.2.x86_64                  43/193
+[  125.413419] cloud-init[6621]: Verifying  : systemtap-runtime-4.5-1.amzn2.0.3.x86_64                  44/193
+[  125.425420] cloud-init[6621]: Verifying  : lz4-1.7.5-2.amzn2.0.2.x86_64                              45/193
+[  125.437627] cloud-init[6621]: Verifying  : screen-4.1.0-0.27.20120314git3c2946.amzn2.0.2.x86_64      46/193
+[  125.449864] cloud-init[6621]: Verifying  : gawk-4.0.2-4.amzn2.1.3.x86_64                             47/193
+[  125.461073] cloud-init[6621]: Verifying  : kpatch-runtime-0.9.4-8.amzn2.noarch                       48/193
+[  125.473402] cloud-init[6621]: Verifying  : 1:mariadb-libs-5.5.68-1.amzn2.0.1.x86_64                  49/193
+[  125.485153] cloud-init[6621]: Verifying  : iproute-5.10.0-2.amzn2.0.3.x86_64                         50/193
+[  125.497670] cloud-init[6621]: Verifying  : boost-system-1.53.0-27.amzn2.0.7.x86_64                   51/193
+[  125.509326] cloud-init[6621]: Verifying  : elfutils-default-yama-scope-0.176-2.amzn2.0.2.noarch      52/193
+[  125.521142] cloud-init[6621]: Verifying  : ec2-instance-connect-selinux-1.1-19.amzn2.noarch          53/193
+[  125.533624] cloud-init[6621]: Verifying  : iputils-20180629-11.amzn2.1.20160308.x86_64               54/193
+[  125.545627] cloud-init[6621]: Verifying  : mdadm-4.0-5.amzn2.0.3.x86_64                              55/193
+[  125.558349] cloud-init[6621]: Verifying  : libmount-2.30.2-2.amzn2.0.13.x86_64                       56/193
+[  125.571909] cloud-init[6621]: Verifying  : libsmartcols-2.30.2-2.amzn2.0.13.x86_64                   57/193
+[  125.584532] cloud-init[6621]: Verifying  : cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64                 58/193
+[  125.596710] cloud-init[6621]: Verifying  : libidn2-2.3.0-1.amzn2.0.3.x86_64                          59/193
+[  125.609077] cloud-init[6621]: Verifying  : 3:traceroute-2.0.22-2.amzn2.0.2.x86_64                    60/193
+[  125.621234] cloud-init[6621]: Verifying  : python-configobj-4.7.2-7.amzn2.0.1.noarch                 61/193
+[  125.633258] cloud-init[6621]: Verifying  : libfastjson-0.99.4-3.amzn2.0.1.x86_64                     62/193
+[  125.645145] cloud-init[6621]: Verifying  : hibagent-1.1.0-6.amzn2.noarch                             63/193
+[  125.656830] cloud-init[6621]: Verifying  : python2-botocore-1.18.6-1.amzn2.0.3.noarch                64/193
+[  125.669319] cloud-init[6621]: Verifying  : pcre-8.32-17.amzn2.0.3.x86_64                             65/193
+[  125.680997] cloud-init[6621]: Verifying  : acpid-2.0.19-9.amzn2.0.2.x86_64                           66/193
+[  125.698481] cloud-init[6621]: Verifying  : selinux-policy-3.13.1-192.amzn2.6.8.noarch                67/193
+[  125.713695] cloud-init[6621]: Verifying  : kernel-5.10.255-253.1008.amzn2.x86_64                     68/193
+[  125.725001] cloud-init[6621]: Verifying  : python2-rsa-3.4.1-1.amzn2.0.4.noarch                      69/193
+[  125.737837] cloud-init[6621]: Verifying  : libss-1.42.9-19.amzn2.0.1.x86_64                          70/193
+[  125.750655] cloud-init[6621]: Verifying  : 12:dhcp-libs-4.2.5-79.amzn2.1.5.x86_64                    71/193
+[  125.762259] cloud-init[6621]: Verifying  : 1:gmp-6.0.0-15.amzn2.0.3.x86_64                           72/193
+[  125.773564] cloud-init[6621]: Verifying  : ec2-utils-1.2-48.amzn2.noarch                             73/193
+[  125.786780] cloud-init[6621]: Verifying  : python2-six-1.11.0-8.amzn2.0.1.noarch                     74/193
+[  125.797873] cloud-init[6621]: Verifying  : python2-cryptography-1.7.2-2.amzn2.0.1.x86_64             75/193
+[  125.809377] cloud-init[6621]: Verifying  : unzip-6.0-57.amzn2.0.1.x86_64                             76/193
+[  125.821109] cloud-init[6621]: Verifying  : rpm-libs-4.11.3-48.amzn2.0.5.x86_64                       77/193
+[  125.832885] cloud-init[6621]: Verifying  : 2:shadow-utils-4.1.5.1-24.amzn2.0.3.x86_64                78/193
+[  125.845909] cloud-init[6621]: Verifying  : cyrus-sasl-plain-2.1.26-24.amzn2.0.1.x86_64               79/193
+[  125.857261] cloud-init[6621]: Verifying  : sysctl-defaults-1.0-3.amzn2.noarch                        80/193
+[  125.870259] cloud-init[6621]: Verifying  : libfdisk-2.30.2-2.amzn2.0.13.x86_64                       81/193
+[  125.882091] cloud-init[6621]: Verifying  : boost-thread-1.53.0-27.amzn2.0.7.x86_64                   82/193
+[  125.896886] cloud-init[6621]: Verifying  : awscli-1.18.147-1.amzn2.0.2.noarch                        83/193
+[  125.909796] cloud-init[6621]: Verifying  : amd-ucode-firmware-20200421-85.git78c0348.amzn2.noarch    84/193
+[  125.921436] cloud-init[6621]: Verifying  : libgcrypt-1.5.3-14.amzn2.0.3.x86_64                       85/193
+[  125.934457] cloud-init[6621]: Verifying  : 1:dmidecode-3.2-5.amzn2.1.1.x86_64                        86/193
+[  125.952339] cloud-init[6621]: Verifying  : libblkid-2.30.2-2.amzn2.0.13.x86_64                       87/193
+[  125.968456] cloud-init[6621]: Verifying  : python-idna-2.4-1.amzn2.0.1.noarch                        88/193
+[  125.980979] cloud-init[6621]: Verifying  : libcom_err-1.42.9-19.amzn2.0.1.x86_64                     89/193
+[  125.993724] cloud-init[6621]: Verifying  : initscripts-9.49.47-1.amzn2.0.3.x86_64                    90/193
+[  126.005195] cloud-init[6621]: Verifying  : libstdc++-7.3.1-18.amzn2.x86_64                           91/193
+[  126.017042] cloud-init[6621]: Verifying  : libsepol-2.5-10.amzn2.0.1.x86_64                          92/193
+[  126.029362] cloud-init[6621]: Verifying  : nano-2.9.8-2.amzn2.0.2.x86_64                             93/193
+[  126.041068] cloud-init[6621]: Verifying  : e2fsprogs-1.42.9-19.amzn2.0.1.x86_64                      94/193
+[  126.053485] cloud-init[6621]: Verifying  : boost-date-time-1.53.0-27.amzn2.0.7.x86_64                95/193
+[  126.065394] cloud-init[6621]: Verifying  : dracut-033-535.amzn2.1.6.x86_64                           96/193
+[  126.077457] cloud-init[6621]: Verifying  : perl-File-Path-2.09-2.amzn2.0.1.noarch                    97/193
+[  126.089539] cloud-init[6621]: Verifying  : rpm-4.11.3-48.amzn2.0.5.x86_64                            98/193
+[  126.090454] cloud-init[6621]: Verifying  : screen-4.1.0-0.27.20120314git3c2946.amzn2.x86_64          99/193
+[  126.091219] cloud-init[6621]: Verifying  : libwebp-0.3.0-10.amzn2.x86_64                            100/193
+[  126.091960] cloud-init[6621]: Verifying  : python-ipaddress-1.0.16-2.amzn2.noarch                   101/193
+[  126.092576] cloud-init[6621]: Verifying  : ec2-net-utils-1.6-1.amzn2.noarch                         102/193
+[  126.093220] cloud-init[6621]: Verifying  : libidn-1.28-4.amzn2.0.2.x86_64                           103/193
+[  126.093904] cloud-init[6621]: Verifying  : libgomp-7.3.1-13.amzn2.x86_64                            104/193
+[  126.094550] cloud-init[6621]: Verifying  : e2fsprogs-1.42.9-19.amzn2.x86_64                         105/193
+[  126.095171] cloud-init[6621]: Verifying  : 12:dhcp-libs-4.2.5-77.amzn2.1.5.x86_64                   106/193
+[  126.095827] cloud-init[6621]: Verifying  : jbigkit-libs-2.0-11.amzn2.0.2.x86_64                     107/193
+[  126.096460] cloud-init[6621]: Verifying  : aws-cfn-bootstrap-2.0-10.amzn2.noarch                    108/193
+[  126.097118] cloud-init[6621]: Verifying  : sysctl-defaults-1.0-2.amzn2.noarch                       109/193
+[  126.097885] cloud-init[6621]: Verifying  : libfastjson-0.99.4-3.amzn2.x86_64                        110/193
+[  126.098615] cloud-init[6621]: Verifying  : elfutils-libelf-0.176-2.amzn2.x86_64                     111/193
+[  126.099254] cloud-init[6621]: Verifying  : libss-1.42.9-19.amzn2.x86_64                             112/193
+[  126.099963] cloud-init[6621]: Verifying  : python-idna-2.4-1.amzn2.noarch                           113/193
+[  126.100574] cloud-init[6621]: Verifying  : dracut-config-generic-033-535.amzn2.1.5.x86_64           114/193
+[  126.101212] cloud-init[6621]: Verifying  : ec2-instance-connect-1.1-15.amzn2.noarch                 115/193
+[  126.101878] cloud-init[6621]: Verifying  : initscripts-9.49.47-1.amzn2.0.1.x86_64                   116/193
+[  126.102513] cloud-init[6621]: Verifying  : libblkid-2.30.2-2.amzn2.0.5.x86_64                       117/193
+[  126.103195] cloud-init[6621]: Verifying  : 3:traceroute-2.0.22-2.amzn2.0.1.x86_64                   118/193
+[  126.103803] cloud-init[6621]: Verifying  : net-tools-2.0-0.22.20131004git.amzn2.0.2.x86_64          119/193
+[  126.104564] cloud-init[6621]: Verifying  : iproute-5.10.0-2.amzn2.0.1.x86_64                        120/193
+[  126.105159] cloud-init[6621]: Verifying  : acpid-2.0.19-9.amzn2.0.1.x86_64                          121/193
+[  126.105809] cloud-init[6621]: Verifying  : systemtap-runtime-4.4-1.amzn2.0.2.x86_64                 122/193
+[  126.106451] cloud-init[6621]: Verifying  : libdwarf-20130207-4.amzn2.0.2.x86_64                     123/193
+[  126.107091] cloud-init[6621]: Verifying  : python2-cryptography-1.7.2-2.amzn2.x86_64                124/193
+[  126.107724] cloud-init[6621]: Verifying  : libfdisk-2.30.2-2.amzn2.0.5.x86_64                       125/193
+[  126.108367] cloud-init[6621]: Verifying  : yajl-2.0.4-4.amzn2.0.1.x86_64                            126/193
+[  126.109019] cloud-init[6621]: Verifying  : libseccomp-2.4.1-1.amzn2.x86_64                          127/193
+[  126.109703] cloud-init[6621]: Verifying  : hibagent-1.1.0-5.amzn2.noarch                            128/193
+[  126.110305] cloud-init[6621]: Verifying  : binutils-2.29.1-31.amzn2.x86_64                          129/193
+[  126.111111] cloud-init[6621]: Verifying  : tzdata-2021e-1.amzn2.noarch                              130/193
+[  126.112028] cloud-init[6621]: Verifying  : amazon-linux-extras-yum-plugin-2.0.1-1.amzn2.noarch      131/193
+[  126.112680] cloud-init[6621]: Verifying  : rpm-4.11.3-40.amzn2.0.6.x86_64                           132/193
+[  126.113334] cloud-init[6621]: Verifying  : e2fsprogs-libs-1.42.9-19.amzn2.x86_64                    133/193
+[  126.114026] cloud-init[6621]: Verifying  : pcre2-10.23-2.amzn2.0.2.x86_64                           134/193
+[  126.114619] cloud-init[6621]: Verifying  : 12:dhcp-common-4.2.5-77.amzn2.1.5.x86_64                 135/193
+[  126.115247] cloud-init[6621]: Verifying  : 1:system-release-2-14.amzn2.x86_64                       136/193
+[  126.115937] cloud-init[6621]: Verifying  : libidn2-2.3.0-1.amzn2.x86_64                             137/193
+[  126.116553] cloud-init[6621]: Verifying  : cyrus-sasl-plain-2.1.26-24.amzn2.x86_64                  138/193
+[  126.117207] cloud-init[6621]: Verifying  : gawk-4.0.2-4.amzn2.1.2.x86_64                            139/193
+[  126.118016] cloud-init[6621]: Verifying  : nano-2.9.8-2.amzn2.0.1.x86_64                            140/193
+[  126.118764] cloud-init[6621]: Verifying  : python2-jmespath-0.9.3-1.amzn2.0.1.noarch                141/193
+[  126.119430] cloud-init[6621]: Verifying  : cyrus-sasl-lib-2.1.26-24.amzn2.x86_64                    142/193
+[  126.120137] cloud-init[6621]: Verifying  : python2-botocore-1.18.6-1.amzn2.0.1.noarch               143/193
+[  126.120703] cloud-init[6621]: Verifying  : python-colorama-0.3.2-3.amzn2.noarch                     144/193
+[  126.121361] cloud-init[6621]: Verifying  : 2:shadow-utils-4.1.5.1-24.amzn2.0.2.x86_64               145/193
+[  126.121998] cloud-init[6621]: Verifying  : selinux-policy-targeted-3.13.1-192.amzn2.6.7.noarch      146/193
+[  126.122629] cloud-init[6621]: Verifying  : elfutils-libs-0.176-2.amzn2.x86_64                       147/193
+[  126.123259] cloud-init[6621]: Verifying  : python2-rsa-3.4.1-1.amzn2.0.1.noarch                     148/193
+[  126.123995] cloud-init[6621]: Verifying  : xfsprogs-4.5.0-18.amzn2.0.1.x86_64                       149/193
+[  126.124722] cloud-init[6621]: Verifying  : mdadm-4.0-5.amzn2.0.2.x86_64                             150/193
+[  126.125345] cloud-init[6621]: Verifying  : lz4-1.7.5-2.amzn2.0.1.x86_64                             151/193
+[  126.125996] cloud-init[6621]: Verifying  : elfutils-default-yama-scope-0.176-2.amzn2.noarch         152/193
+[  126.126597] cloud-init[6621]: Verifying  : kpatch-runtime-0.9.4-3.amzn2.noarch                      153/193
+[  126.127258] cloud-init[6621]: Verifying  : chrony-4.0-3.amzn2.0.2.x86_64                            154/193
+[  126.127901] cloud-init[6621]: Verifying  : 1:mariadb-libs-5.5.68-1.amzn2.x86_64                     155/193
+[  126.128579] cloud-init[6621]: Verifying  : libgcc-7.3.1-13.amzn2.x86_64                             156/193
+[  126.129240] cloud-init[6621]: Verifying  : boost-thread-1.53.0-27.amzn2.0.5.x86_64                  157/193
+[  126.129896] cloud-init[6621]: Verifying  : selinux-policy-3.13.1-192.amzn2.6.7.noarch               158/193
+[  126.130557] cloud-init[6621]: Verifying  : libmount-2.30.2-2.amzn2.0.5.x86_64                       159/193
+[  126.131277] cloud-init[6621]: Verifying  : python2-jsonschema-2.5.1-3.amzn2.0.1.noarch              160/193
+[  126.131850] cloud-init[6621]: Verifying  : libstdc++-7.3.1-13.amzn2.x86_64                          161/193
+[  126.132472] cloud-init[6621]: Verifying  : libsepol-2.5-8.1.amzn2.0.2.x86_64                        162/193
+[  126.133112] cloud-init[6621]: Verifying  : PyYAML-3.10-11.amzn2.0.2.x86_64                          163/193
+[  126.186942] cloud-init[6621]: Verifying  : pam-1.1.8-23.amzn2.0.1.x86_64                            164/193
+[  126.187197] cloud-init[6621]: Verifying  : amazon-linux-extras-2.0.1-1.amzn2.noarch                 165/193
+[  126.187474] cloud-init[6621]: Verifying  : 1:gmp-6.0.0-15.amzn2.0.2.x86_64                          166/193
+[  126.187617] cloud-init[6621]: Verifying  : iputils-20160308-10.amzn2.0.2.x86_64                     167/193
+[  126.187828] cloud-init[6621]: Verifying  : python-babel-0.9.6-8.amzn2.0.1.noarch                    168/193
+[  126.188052] cloud-init[6621]: Verifying  : util-linux-2.30.2-2.amzn2.0.5.x86_64                     169/193
+[  126.188266] cloud-init[6621]: Verifying  : unzip-6.0-43.amzn2.x86_64                                170/193
+[  126.188488] cloud-init[6621]: Verifying  : rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.6.x86_64    171/193
+[  126.188709] cloud-init[6621]: Verifying  : python-six-1.9.0-2.amzn2.noarch                          172/193
+[  126.188925] cloud-init[6621]: Verifying  : 12:dhclient-4.2.5-77.amzn2.1.5.x86_64                    173/193
+[  126.189142] cloud-init[6621]: Verifying  : python2-rpm-4.11.3-40.amzn2.0.6.x86_64                   174/193
+[  126.189357] cloud-init[6621]: Verifying  : 1:python2-dateutil-2.6.0-3.amzn2.0.1.noarch              175/193
+[  126.190404] cloud-init[6621]: Verifying  : awscli-1.18.147-1.amzn2.0.1.noarch                       176/193
+[  126.190808] cloud-init[6621]: Verifying  : python-requests-2.6.0-7.amzn2.noarch                     177/193
+[  126.191010] cloud-init[6621]: Verifying  : libuuid-2.30.2-2.amzn2.0.5.x86_64                        178/193
+[  126.191238] cloud-init[6621]: Verifying  : rpm-libs-4.11.3-40.amzn2.0.6.x86_64                      179/193
+[  126.191547] cloud-init[6621]: Verifying  : libgcrypt-1.5.3-14.amzn2.0.2.x86_64                      180/193
+[  126.191918] cloud-init[6621]: Verifying  : dracut-033-535.amzn2.1.5.x86_64                          181/193
+[  126.192119] cloud-init[6621]: Verifying  : python-configobj-4.7.2-7.amzn2.noarch                    182/193
+[  126.192341] cloud-init[6621]: Verifying  : boost-system-1.53.0-27.amzn2.0.5.x86_64                  183/193
+[  126.192564] cloud-init[6621]: Verifying  : perl-File-Path-2.09-2.amzn2.noarch                       184/193
+[  126.192786] cloud-init[6621]: Verifying  : boost-date-time-1.53.0-27.amzn2.0.5.x86_64               185/193
+[  126.193004] cloud-init[6621]: Verifying  : pcre-8.32-17.amzn2.0.2.x86_64                            186/193
+[  126.193233] cloud-init[6621]: Verifying  : libcom_err-1.42.9-19.amzn2.x86_64                        187/193
+[  126.193471] cloud-init[6621]: Verifying  : ec2-hibinit-agent-1.0.2-3.amzn2.noarch                   188/193
+[  126.193742] cloud-init[6621]: Verifying  : 14:tcpdump-4.9.2-4.amzn2.1.x86_64                        189/193
+[  126.193991] cloud-init[6621]: Verifying  : ec2-utils-1.2-47.amzn2.noarch                            190/193
+[  126.194372] cloud-init[6621]: Verifying  : 1:dmidecode-3.2-5.amzn2.1.x86_64                         191/193
+[  126.194589] cloud-init[6621]: Verifying  : libsmartcols-2.30.2-2.amzn2.0.5.x86_64                   192/193
+[  126.218330] cloud-init[6621]: Verifying  : rpm-build-libs-4.11.3-40.amzn2.0.6.x86_64                193/193
+[  126.218751] cloud-init[6621]: Installed:
+[  126.219043] cloud-init[6621]: kernel.x86_64 0:5.10.255-253.1008.amzn2
+[  126.219255] cloud-init[6621]: python2-colorama.noarch 0:0.3.9-3.amzn2.0.1
+[  126.219485] cloud-init[6621]: python2-six.noarch 0:1.11.0-8.amzn2.0.1
+[  126.219699] cloud-init[6621]: Dependency Installed:
+[  126.219924] cloud-init[6621]: amd-ucode-firmware.noarch 0:20200421-85.git78c0348.amzn2
+[  126.220137] cloud-init[6621]: ec2-instance-connect-selinux.noarch 0:1.1-19.amzn2
+[  126.220355] cloud-init[6621]: Updated:
+[  126.220574] cloud-init[6621]: PyYAML.x86_64 0:3.10-11.amzn2.0.3
+[  126.220790] cloud-init[6621]: acpid.x86_64 0:2.0.19-9.amzn2.0.2
+[  126.221011] cloud-init[6621]: amazon-linux-extras.noarch 0:2.0.3-1.amzn2
+[  126.221227] cloud-init[6621]: amazon-linux-extras-yum-plugin.noarch 0:2.0.3-1.amzn2
+[  126.221446] cloud-init[6621]: aws-cfn-bootstrap.noarch 0:2.0-39.amzn2
+[  126.222717] cloud-init[6621]: awscli.noarch 0:1.18.147-1.amzn2.0.2
+[  126.223123] cloud-init[6621]: binutils.x86_64 0:2.29.1-31.amzn2.0.2
+[  126.223346] cloud-init[6621]: boost-date-time.x86_64 0:1.53.0-27.amzn2.0.7
+[  126.223636] cloud-init[6621]: boost-system.x86_64 0:1.53.0-27.amzn2.0.7
+[  126.224021] cloud-init[6621]: boost-thread.x86_64 0:1.53.0-27.amzn2.0.7
+[  126.224241] cloud-init[6621]: chrony.x86_64 0:4.2-5.amzn2.0.2
+[  126.224464] cloud-init[6621]: cyrus-sasl-lib.x86_64 0:2.1.26-24.amzn2.0.1
+[  126.224701] cloud-init[6621]: cyrus-sasl-plain.x86_64 0:2.1.26-24.amzn2.0.1
+[  126.224913] cloud-init[6621]: dhclient.x86_64 12:4.2.5-79.amzn2.1.5
+[  126.225145] cloud-init[6621]: dhcp-common.x86_64 12:4.2.5-79.amzn2.1.5
+[  126.225374] cloud-init[6621]: dhcp-libs.x86_64 12:4.2.5-79.amzn2.1.5
+[  126.225635] cloud-init[6621]: dmidecode.x86_64 1:3.2-5.amzn2.1.1
+[  126.225844] cloud-init[6621]: dracut.x86_64 0:033-535.amzn2.1.6
+[  126.226138] cloud-init[6621]: dracut-config-generic.x86_64 0:033-535.amzn2.1.6
+[  126.226992] cloud-init[6621]: e2fsprogs.x86_64 0:1.42.9-19.amzn2.0.1
+[  126.228134] cloud-init[6621]: e2fsprogs-libs.x86_64 0:1.42.9-19.amzn2.0.1
+[  126.228559] cloud-init[6621]: ec2-hibinit-agent.noarch 0:1.0.10-2.amzn2
+[  126.228991] cloud-init[6621]: ec2-instance-connect.noarch 0:1.1-19.amzn2
+[  126.229392] cloud-init[6621]: ec2-net-utils.noarch 0:1.7.3-1.amzn2
+[  126.229654] cloud-init[6621]: ec2-utils.noarch 0:1.2-48.amzn2
+[  126.229846] cloud-init[6621]: elfutils-default-yama-scope.noarch 0:0.176-2.amzn2.0.2
+[  126.230419] cloud-init[6621]: elfutils-libelf.x86_64 0:0.176-2.amzn2.0.2
+[  126.230747] cloud-init[6621]: elfutils-libs.x86_64 0:0.176-2.amzn2.0.2
+[  126.231048] cloud-init[6621]: gawk.x86_64 0:4.0.2-4.amzn2.1.3
+[  126.237918] cloud-init[6621]: gmp.x86_64 1:6.0.0-15.amzn2.0.3
+[  126.238343] cloud-init[6621]: hibagent.noarch 0:1.1.0-6.amzn2
+[  126.238733] cloud-init[6621]: initscripts.x86_64 0:9.49.47-1.amzn2.0.3
+[  126.238957] cloud-init[6621]: iproute.x86_64 0:5.10.0-2.amzn2.0.3
+[  126.239173] cloud-init[6621]: iputils.x86_64 0:20180629-11.amzn2.1.20160308
+[  126.239421] cloud-init[6621]: jbigkit-libs.x86_64 0:2.0-11.amzn2.0.3
+[  126.239630] cloud-init[6621]: kpatch-runtime.noarch 0:0.9.4-8.amzn2
+[  126.239854] cloud-init[6621]: libblkid.x86_64 0:2.30.2-2.amzn2.0.13
+[  126.240079] cloud-init[6621]: libcom_err.x86_64 0:1.42.9-19.amzn2.0.1
+[  126.240404] cloud-init[6621]: libdwarf.x86_64 0:20130207-4.amzn2.0.3
+[  126.240765] cloud-init[6621]: libfastjson.x86_64 0:0.99.4-3.amzn2.0.1
+[  126.240980] cloud-init[6621]: libfdisk.x86_64 0:2.30.2-2.amzn2.0.13
+[  126.241203] cloud-init[6621]: libgcc.x86_64 0:7.3.1-18.amzn2
+[  126.241430] cloud-init[6621]: libgcrypt.x86_64 0:1.5.3-14.amzn2.0.3
+[  126.241724] cloud-init[6621]: libgomp.x86_64 0:7.3.1-18.amzn2
+[  126.242122] cloud-init[6621]: libidn.x86_64 0:1.28-4.amzn2.0.5
+[  126.242338] cloud-init[6621]: libidn2.x86_64 0:2.3.0-1.amzn2.0.3
+[  126.242572] cloud-init[6621]: libmount.x86_64 0:2.30.2-2.amzn2.0.13
+[  126.242800] cloud-init[6621]: libseccomp.x86_64 0:2.5.2-1.amzn2.0.1
+[  126.243107] cloud-init[6621]: libsepol.x86_64 0:2.5-10.amzn2.0.1
+[  126.243591] cloud-init[6621]: libsmartcols.x86_64 0:2.30.2-2.amzn2.0.13
+[  126.243788] cloud-init[6621]: libss.x86_64 0:1.42.9-19.amzn2.0.1
+[  126.245599] cloud-init[6621]: libstdc++.x86_64 0:7.3.1-18.amzn2
+[  126.246033] cloud-init[6621]: libuuid.x86_64 0:2.30.2-2.amzn2.0.13
+[  126.246397] cloud-init[6621]: libwebp.x86_64 0:0.3.0-10.amzn2.0.2
+[  126.246620] cloud-init[6621]: lz4.x86_64 0:1.7.5-2.amzn2.0.2
+[  126.246846] cloud-init[6621]: mariadb-libs.x86_64 1:5.5.68-1.amzn2.0.1
+[  126.247066] cloud-init[6621]: mdadm.x86_64 0:4.0-5.amzn2.0.3
+[  126.247288] cloud-init[6621]: nano.x86_64 0:2.9.8-2.amzn2.0.2
+[  126.247628] cloud-init[6621]: net-tools.x86_64 0:2.0-0.22.20131004git.amzn2.0.3
+[  126.253625] cloud-init[6621]: pam.x86_64 0:1.1.8-23.amzn2.0.5
+[  126.254034] cloud-init[6621]: pcre.x86_64 0:8.32-17.amzn2.0.3
+[  126.254294] cloud-init[6621]: pcre2.x86_64 0:10.23-11.amzn2.0.2
+[  126.254509] cloud-init[6621]: perl-File-Path.noarch 0:2.09-2.amzn2.0.1
+[  126.254741] cloud-init[6621]: python-babel.noarch 0:0.9.6-8.amzn2.0.2
+[  126.254954] cloud-init[6621]: python-configobj.noarch 0:4.7.2-7.amzn2.0.1
+[  126.255181] cloud-init[6621]: python-idna.noarch 0:2.4-1.amzn2.0.1
+[  126.255425] cloud-init[6621]: python-ipaddress.noarch 0:1.0.16-2.amzn2.0.3
+[  126.255632] cloud-init[6621]: python-requests.noarch 0:2.6.0-10.amzn2.0.7
+[  126.255970] cloud-init[6621]: python2-botocore.noarch 0:1.18.6-1.amzn2.0.3
+[  126.256327] cloud-init[6621]: python2-cryptography.x86_64 0:1.7.2-2.amzn2.0.1
+[  126.256550] cloud-init[6621]: python2-dateutil.noarch 1:2.6.1-3.amzn2
+[  126.309577] cloud-init[6621]: python2-jmespath.noarch 0:0.9.3-1.amzn2.0.2
+[  126.309849] cloud-init[6621]: python2-jsonschema.noarch 0:2.5.1-3.amzn2.0.2
+[  126.310038] cloud-init[6621]: python2-rpm.x86_64 0:4.11.3-48.amzn2.0.5
+[  126.310264] cloud-init[6621]: python2-rsa.noarch 0:3.4.1-1.amzn2.0.4
+[  126.310490] cloud-init[6621]: rpm.x86_64 0:4.11.3-48.amzn2.0.5
+[  126.310717] cloud-init[6621]: rpm-build-libs.x86_64 0:4.11.3-48.amzn2.0.5
+[  126.310939] cloud-init[6621]: rpm-libs.x86_64 0:4.11.3-48.amzn2.0.5
+[  126.311175] cloud-init[6621]: rpm-plugin-systemd-inhibit.x86_64 0:4.11.3-48.amzn2.0.5
+[  126.311399] cloud-init[6621]: screen.x86_64 0:4.1.0-0.27.20120314git3c2946.amzn2.0.2
+[  126.311630] cloud-init[6621]: selinux-policy.noarch 0:3.13.1-192.amzn2.6.8
+[  126.311855] cloud-init[6621]: selinux-policy-targeted.noarch 0:3.13.1-192.amzn2.6.8
+[  126.312075] cloud-init[6621]: shadow-utils.x86_64 2:4.1.5.1-24.amzn2.0.3
+[  126.312293] cloud-init[6621]: sysctl-defaults.noarch 0:1.0-3.amzn2
+[  126.312509] cloud-init[6621]: system-release.x86_64 1:2-17.amzn2
+[  126.312736] cloud-init[6621]: systemtap-runtime.x86_64 0:4.5-1.amzn2.0.3
+[  126.313004] cloud-init[6621]: tcpdump.x86_64 14:4.9.2-4.amzn2.1.0.1
+[  126.313179] cloud-init[6621]: traceroute.x86_64 3:2.0.22-2.amzn2.0.2
+[  126.313397] cloud-init[6621]: tzdata.noarch 0:2026b-1.amzn2.0.1
+[  126.314788] cloud-init[6621]: unzip.x86_64 0:6.0-57.amzn2.0.1
+[  126.315079] cloud-init[6621]: util-linux.x86_64 0:2.30.2-2.amzn2.0.13
+[  126.315302] cloud-init[6621]: xfsprogs.x86_64 0:5.0.0-10.amzn2.0.1
+[  126.315533] cloud-init[6621]: yajl.x86_64 0:2.0.4-4.amzn2.0.3
+[  126.315747] cloud-init[6621]: Replaced:
+[  126.315989] cloud-init[6621]: python-colorama.noarch 0:0.3.2-3.amzn2    python-six.noarch 0:1.9.0-2.amzn2
+[  126.316202] cloud-init[6621]: Complete!
+[  126.921778] cloud-init[6621]: Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+[  126.942440] cloud-init[6621]: Existing lock /var/run/yum.pid: another copy is running as pid 10159.
+[  126.943100] cloud-init[6621]: Another app is currently holding the yum lock; waiting for it to exit...
+[  126.943977] cloud-init[6621]: The other application is: yum
+[  126.944440] cloud-init[6621]: Memory :  71 M RSS (291 MB VSZ)
+[  126.944850] cloud-init[6621]: Started: Mon Jun  1 09:53:43 2026 - 00:02 ago
+[  126.945251] cloud-init[6621]: State  : Running, pid: 10159
+[  128.948837] cloud-init[6621]: Another app is currently holding the yum lock; waiting for it to exit...
+[  128.949182] cloud-init[6621]: The other application is: yum
+[  128.949511] cloud-init[6621]: Memory : 196 M RSS (415 MB VSZ)
+[  128.949940] cloud-init[6621]: Started: Mon Jun  1 09:53:43 2026 - 00:04 ago
+[  128.950165] cloud-init[6621]: State  : Running, pid: 10159
+[  130.950711] cloud-init[6621]: Another app is currently holding the yum lock; waiting for it to exit...
+[  130.951033] cloud-init[6621]: The other application is: yum
+[  130.951373] cloud-init[6621]: Memory : 246 M RSS (466 MB VSZ)
+[  130.951575] cloud-init[6621]: Started: Mon Jun  1 09:53:43 2026 - 00:06 ago
+[  130.951784] cloud-init[6621]: State  : Running, pid: 10159
+[[32m  OK  [0m] Started Dynamically Generate Message Of The Day.
+[  133.494105] cloud-init[6621]: Package awscli-1.18.147-1.amzn2.0.2.noarch already installed and latest version
+	2026-06-01T09:54:14+00:00
