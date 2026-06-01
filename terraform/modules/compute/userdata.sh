@@ -78,10 +78,6 @@ docker run -d \
   -e LOG_FORMAT=json \
   -e ALLOWED_ORIGINS="*" \
   -e SECURE_COOKIE=false \
-  --log-driver awslogs \
-  --log-opt awslogs-region=$AWS_REGION \
-  --log-opt awslogs-group=${log_group_name} \
-  --log-opt awslogs-stream=$INSTANCE_ID \
   445567073243.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
 
 echo "Backend container started successfully"
