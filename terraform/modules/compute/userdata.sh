@@ -53,10 +53,10 @@ systemctl enable amazon-cloudwatch-agent
 # Login to ECR
 aws ecr get-login-password --region $AWS_REGION | \
   docker login --username AWS --password-stdin \
-  829350946407.dkr.ecr.$AWS_REGION.amazonaws.com
+  445567073243.dkr.ecr.$AWS_REGION.amazonaws.com
 
 # Pull and run container
-docker pull 829350946407.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
+docker pull 445567073243.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
 
 docker stop muchtodo 2>/dev/null || true
 docker rm muchtodo 2>/dev/null || true
@@ -72,6 +72,6 @@ docker run -d \
   --log-opt awslogs-region=$AWS_REGION \
   --log-opt awslogs-group=${log_group_name} \
   --log-opt awslogs-stream=$INSTANCE_ID \
-  829350946407.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
+  445567073243.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
 
 echo "Backend container started successfully"
