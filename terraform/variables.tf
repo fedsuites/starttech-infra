@@ -104,4 +104,4 @@ variable "ecr_repository_name" {
   description = "Name of the ECR repository for backend image"
   type        = string
   default     = "starttech-backend"
-}
+} 
