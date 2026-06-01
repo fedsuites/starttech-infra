@@ -106,3 +106,4 @@ variable "ecr_repository_name" {
   default     = "starttech-backend"
 } 
  
+ 
