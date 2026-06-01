@@ -80,4 +80,15 @@ docker run -d \
   -e SECURE_COOKIE=false \
   445567073243.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
 
+# Wait for container to start or fail
+sleep 10
+
+# Capture container logs to file regardless of container state
+docker logs muchtodo > /var/log/muchtodo-startup.log 2>&1 || true
+docker inspect muchtodo >> /var/log/muchtodo-startup.log 2>&1 || true
+
+# Write startup log to console so we can see it
+echo "=== CONTAINER STARTUP LOG ==="
+cat /var/log/muchtodo-startup.log
+echo "=== END CONTAINER LOG ==="
 echo "Backend container started successfully"
