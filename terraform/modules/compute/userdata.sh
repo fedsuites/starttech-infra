@@ -72,7 +72,7 @@ docker run -d \
   -e DB_NAME=much_todo_db \
   -e JWT_SECRET_KEY="${jwt_secret}" \
   -e JWT_EXPIRATION_HOURS=72 \
-  -e ENABLE_CACHE=true \
+  -e ENABLE_CACHE=false \
   -e REDIS_ADDR="${redis_addr}" \
   -e LOG_LEVEL=INFO \
   -e LOG_FORMAT=json \
