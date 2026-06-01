@@ -195,4 +195,4 @@ variable "redis_addr" {
   description = "Redis address host:port"
   type        = string
   default     = "starttech-redis.d4y5r7.0001.use1.cache.amazonaws.com:6379"
-}
+}# trigger
