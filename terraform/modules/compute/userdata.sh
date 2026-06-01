@@ -48,7 +48,7 @@ docker run -d \
   --name muchtodo \
   --restart unless-stopped \
   -p 8080:8080 \
-  --env-file /etc/muchtodo/env \
+  -v /etc/muchtodo/env:/app/.env \
   445567073243.dkr.ecr.$AWS_REGION.amazonaws.com/${ecr_repository_name}:latest
 
 # Wait for container to start or fail
